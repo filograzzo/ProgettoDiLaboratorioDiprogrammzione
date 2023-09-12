@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/libgmock.a"
+			"path" : "lib/libgmock_main.a"
 		}
 	],
 	"backtrace" : 3,
@@ -33,7 +33,7 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 96,
+				"line" : 99,
 				"parent" : 0
 			},
 			{
@@ -63,7 +63,7 @@
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 97,
+				"line" : 100,
 				"parent" : 0
 			},
 			{
@@ -99,21 +99,23 @@
 			[
 				{
 					"backtrace" : 7,
-					"path" : "C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googlemock/include"
-				},
-				{
-					"backtrace" : 7,
-					"path" : "C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googlemock"
+					"isSystem" : true,
+					"path" : "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googlemock/include"
 				},
 				{
 					"backtrace" : 7,
 					"isSystem" : true,
-					"path" : "C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest/include"
+					"path" : "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googlemock"
 				},
 				{
 					"backtrace" : 7,
 					"isSystem" : true,
-					"path" : "C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest"
+					"path" : "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest/include"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest"
 				}
 			],
 			"language" : "CXX",
@@ -135,10 +137,14 @@
 	[
 		{
 			"backtrace" : 6,
+			"id" : "gmock::@977c622c37621959bcdf"
+		},
+		{
+			"backtrace" : 6,
 			"id" : "gtest::@919d8671e5e914cdef54"
 		}
 	],
-	"id" : "gmock::@977c622c37621959bcdf",
+	"id" : "gmock_main::@977c622c37621959bcdf",
 	"install" : 
 	{
 		"destinations" : 
@@ -153,8 +159,8 @@
 			"path" : "C:/Program Files (x86)/Unit_Testing_Esame"
 		}
 	},
-	"name" : "gmock",
-	"nameOnDisk" : "libgmock.a",
+	"name" : "gmock_main",
+	"nameOnDisk" : "libgmock_main.a",
 	"paths" : 
 	{
 		"build" : "lib/googlemock",
@@ -175,7 +181,7 @@
 		{
 			"backtrace" : 3,
 			"compileGroupIndex" : 0,
-			"path" : "lib/googlemock/src/gmock-all.cc",
+			"path" : "lib/googlemock/src/gmock_main.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

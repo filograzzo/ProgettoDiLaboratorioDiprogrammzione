@@ -56,12 +56,12 @@
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest/include"
+					"path" : "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest/include"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest"
+					"path" : "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest"
 				}
 			],
 			"language" : "CXX",

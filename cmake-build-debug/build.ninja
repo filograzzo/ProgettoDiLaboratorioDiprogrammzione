@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/cmake-build-debug/
 
 #############################################
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -57,7 +57,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -69,7 +69,7 @@ build install: phony CMakeFiles/install.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -80,7 +80,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione -BC:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione -BC:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -98,7 +98,7 @@ build list_install_components: phony
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -107,7 +107,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/CMakeLists.txt
+# C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/CMakeLists.txt
 # =============================================================================
 
 
@@ -115,7 +115,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 # Utility command for install/local
 
 build lib/CMakeFiles/install/local.util: CUSTOM_COMMAND lib/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\lib && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\lib && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -127,7 +127,7 @@ build lib/install/local: phony lib/CMakeFiles/install/local.util
 # Utility command for install
 
 build lib/CMakeFiles/install.util: CUSTOM_COMMAND lib/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\lib && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\lib && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -139,7 +139,7 @@ build lib/install: phony lib/CMakeFiles/install.util
 # Utility command for edit_cache
 
 build lib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\lib && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\lib && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -150,7 +150,7 @@ build lib/edit_cache: phony lib/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build lib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\lib && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione -BC:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\lib && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione -BC:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -168,7 +168,7 @@ build lib/list_install_components: phony
 # Utility command for install/strip
 
 build lib/CMakeFiles/install/strip.util: CUSTOM_COMMAND lib/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\lib && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\lib && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -177,7 +177,7 @@ build lib/install/strip: phony lib/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/CMakeLists.txt
+# C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/CMakeLists.txt
 # =============================================================================
 
 
@@ -185,7 +185,7 @@ build lib/install/strip: phony lib/CMakeFiles/install/strip.util
 # Utility command for install/local
 
 build lib/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND lib/googlemock/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\lib\googlemock && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\lib\googlemock && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -197,7 +197,7 @@ build lib/googlemock/install/local: phony lib/googlemock/CMakeFiles/install/loca
 # Utility command for install
 
 build lib/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND lib/googlemock/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\lib\googlemock && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\lib\googlemock && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -209,7 +209,7 @@ build lib/googlemock/install: phony lib/googlemock/CMakeFiles/install.util
 # Utility command for edit_cache
 
 build lib/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\lib\googlemock && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\lib\googlemock && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -224,10 +224,10 @@ build lib/googlemock/edit_cache: phony lib/googlemock/CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
 
-build lib/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX_COMPILER__gmock_main_Debug C$:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
+build lib/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX_COMPILER__gmock_main_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
   DEP_FILE = lib\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.d
   FLAGS = -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14
-  INCLUDES = -isystem C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googlemock/include -isystem C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googlemock -isystem C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest/include -isystem C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest
+  INCLUDES = -isystem C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googlemock/include -isystem C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googlemock -isystem C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest/include -isystem C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest
   OBJECT_DIR = lib\googlemock\CMakeFiles\gmock_main.dir
   OBJECT_FILE_DIR = lib\googlemock\CMakeFiles\gmock_main.dir\src
   TARGET_COMPILE_PDB = lib\libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
@@ -259,10 +259,10 @@ build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug lib/googl
 
 build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depends_target_gtest
 
-build lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPILER__gmock_Debug C$:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
+build lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPILER__gmock_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
   DEP_FILE = lib\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj.d
   FLAGS = -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14
-  INCLUDES = -IC:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googlemock/include -IC:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googlemock -isystem C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest/include -isystem C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest
+  INCLUDES = -IC:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googlemock/include -IC:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googlemock -isystem C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest/include -isystem C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest
   OBJECT_DIR = lib\googlemock\CMakeFiles\gmock.dir
   OBJECT_FILE_DIR = lib\googlemock\CMakeFiles\gmock.dir\src
   TARGET_COMPILE_PDB = lib\libgmockpdb_debug_postfix-NOTFOUND.pdb
@@ -290,7 +290,7 @@ build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug lib/googlemock/CMak
 # Utility command for rebuild_cache
 
 build lib/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\lib\googlemock && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione -BC:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\lib\googlemock && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione -BC:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -308,7 +308,7 @@ build lib/googlemock/list_install_components: phony
 # Utility command for install/strip
 
 build lib/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND lib/googlemock/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\lib\googlemock && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\lib\googlemock && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -317,7 +317,7 @@ build lib/googlemock/install/strip: phony lib/googlemock/CMakeFiles/install/stri
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googlemock/CMakeLists.txt
+# C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googlemock/CMakeLists.txt
 # =============================================================================
 
 
@@ -335,10 +335,10 @@ build lib/googletest/list_install_components: phony
 
 build cmake_object_order_depends_target_gtest: phony || lib/googletest/CMakeFiles/gtest.dir
 
-build lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPILER__gtest_Debug C$:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
+build lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPILER__gtest_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
   DEP_FILE = lib\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj.d
   FLAGS = -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14
-  INCLUDES = -IC:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest/include -IC:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest
+  INCLUDES = -IC:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest/include -IC:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest
   OBJECT_DIR = lib\googletest\CMakeFiles\gtest.dir
   OBJECT_FILE_DIR = lib\googletest\CMakeFiles\gtest.dir\src
   TARGET_COMPILE_PDB = lib\libgtestpdb_debug_postfix-NOTFOUND.pdb
@@ -370,10 +370,10 @@ build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug lib/googletest/CMak
 
 build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
 
-build lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX_COMPILER__gtest_main_Debug C$:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
+build lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX_COMPILER__gtest_main_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
   DEP_FILE = lib\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d
   FLAGS = -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14
-  INCLUDES = -isystem C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest/include -isystem C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest
+  INCLUDES = -isystem C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest/include -isystem C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest
   OBJECT_DIR = lib\googletest\CMakeFiles\gtest_main.dir
   OBJECT_FILE_DIR = lib\googletest\CMakeFiles\gtest_main.dir\src
   TARGET_COMPILE_PDB = lib\libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
@@ -401,7 +401,7 @@ build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug lib/googl
 # Utility command for install/local
 
 build lib/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND lib/googletest/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\lib\googletest && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\lib\googletest && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -413,7 +413,7 @@ build lib/googletest/install/local: phony lib/googletest/CMakeFiles/install/loca
 # Utility command for install
 
 build lib/googletest/CMakeFiles/install.util: CUSTOM_COMMAND lib/googletest/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\lib\googletest && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\lib\googletest && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -425,7 +425,7 @@ build lib/googletest/install: phony lib/googletest/CMakeFiles/install.util
 # Utility command for edit_cache
 
 build lib/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\lib\googletest && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\lib\googletest && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -436,7 +436,7 @@ build lib/googletest/edit_cache: phony lib/googletest/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build lib/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\lib\googletest && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione -BC:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\lib\googletest && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione -BC:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -448,7 +448,7 @@ build lib/googletest/rebuild_cache: phony lib/googletest/CMakeFiles/rebuild_cach
 # Utility command for install/strip
 
 build lib/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND lib/googletest/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\lib\googletest && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\lib\googletest && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -457,7 +457,7 @@ build lib/googletest/install/strip: phony lib/googletest/CMakeFiles/install/stri
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/CMakeLists.txt
+# C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -469,7 +469,7 @@ build lib/googletest/install/strip: phony lib/googletest/CMakeFiles/install/stri
 
 build cmake_object_order_depends_target__run: phony || src/CMakeFiles/_run.dir
 
-build src/CMakeFiles/_run.dir/FavouriteFolders.cpp.obj: CXX_COMPILER___run_Debug C$:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/src/FavouriteFolders.cpp || cmake_object_order_depends_target__run
+build src/CMakeFiles/_run.dir/FavouriteFolders.cpp.obj: CXX_COMPILER___run_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/src/FavouriteFolders.cpp || cmake_object_order_depends_target__run
   DEP_FILE = src\CMakeFiles\_run.dir\FavouriteFolders.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = src\CMakeFiles\_run.dir
@@ -477,7 +477,7 @@ build src/CMakeFiles/_run.dir/FavouriteFolders.cpp.obj: CXX_COMPILER___run_Debug
   TARGET_COMPILE_PDB = src\CMakeFiles\_run.dir\
   TARGET_PDB = src\_run.pdb
 
-build src/CMakeFiles/_run.dir/Folders.cpp.obj: CXX_COMPILER___run_Debug C$:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/src/Folders.cpp || cmake_object_order_depends_target__run
+build src/CMakeFiles/_run.dir/Folders.cpp.obj: CXX_COMPILER___run_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/src/Folders.cpp || cmake_object_order_depends_target__run
   DEP_FILE = src\CMakeFiles\_run.dir\Folders.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = src\CMakeFiles\_run.dir
@@ -485,7 +485,7 @@ build src/CMakeFiles/_run.dir/Folders.cpp.obj: CXX_COMPILER___run_Debug C$:/User
   TARGET_COMPILE_PDB = src\CMakeFiles\_run.dir\
   TARGET_PDB = src\_run.pdb
 
-build src/CMakeFiles/_run.dir/Note.cpp.obj: CXX_COMPILER___run_Debug C$:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/src/Note.cpp || cmake_object_order_depends_target__run
+build src/CMakeFiles/_run.dir/Note.cpp.obj: CXX_COMPILER___run_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/src/Note.cpp || cmake_object_order_depends_target__run
   DEP_FILE = src\CMakeFiles\_run.dir\Note.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = src\CMakeFiles\_run.dir
@@ -493,7 +493,7 @@ build src/CMakeFiles/_run.dir/Note.cpp.obj: CXX_COMPILER___run_Debug C$:/Users/F
   TARGET_COMPILE_PDB = src\CMakeFiles\_run.dir\
   TARGET_PDB = src\_run.pdb
 
-build src/CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj: CXX_COMPILER___run_Debug C$:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/src/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp || cmake_object_order_depends_target__run
+build src/CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj: CXX_COMPILER___run_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/src/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp || cmake_object_order_depends_target__run
   DEP_FILE = src\CMakeFiles\_run.dir\cmake-build-debug\CMakeFiles\3.26.4\CompilerIdCXX\CMakeCXXCompilerId.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = src\CMakeFiles\_run.dir
@@ -501,7 +501,7 @@ build src/CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/
   TARGET_COMPILE_PDB = src\CMakeFiles\_run.dir\
   TARGET_PDB = src\_run.pdb
 
-build src/CMakeFiles/_run.dir/main.cpp.obj: CXX_COMPILER___run_Debug C$:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/src/main.cpp || cmake_object_order_depends_target__run
+build src/CMakeFiles/_run.dir/main.cpp.obj: CXX_COMPILER___run_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/src/main.cpp || cmake_object_order_depends_target__run
   DEP_FILE = src\CMakeFiles\_run.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = src\CMakeFiles\_run.dir
@@ -533,7 +533,7 @@ build src/_run.exe: CXX_EXECUTABLE_LINKER___run_Debug src/CMakeFiles/_run.dir/Fa
 # Utility command for rebuild_cache
 
 build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\src && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione -BC:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\src && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione -BC:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -549,7 +549,7 @@ build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target__lib: phony || src/CMakeFiles/_lib.dir
 
-build src/CMakeFiles/_lib.dir/FavouriteFolders.cpp.obj: CXX_COMPILER___lib_Debug C$:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/src/FavouriteFolders.cpp || cmake_object_order_depends_target__lib
+build src/CMakeFiles/_lib.dir/FavouriteFolders.cpp.obj: CXX_COMPILER___lib_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/src/FavouriteFolders.cpp || cmake_object_order_depends_target__lib
   DEP_FILE = src\CMakeFiles\_lib.dir\FavouriteFolders.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = src\CMakeFiles\_lib.dir
@@ -557,7 +557,7 @@ build src/CMakeFiles/_lib.dir/FavouriteFolders.cpp.obj: CXX_COMPILER___lib_Debug
   TARGET_COMPILE_PDB = src\CMakeFiles\_lib.dir\_lib.pdb
   TARGET_PDB = src\lib_lib.pdb
 
-build src/CMakeFiles/_lib.dir/Folders.cpp.obj: CXX_COMPILER___lib_Debug C$:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/src/Folders.cpp || cmake_object_order_depends_target__lib
+build src/CMakeFiles/_lib.dir/Folders.cpp.obj: CXX_COMPILER___lib_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/src/Folders.cpp || cmake_object_order_depends_target__lib
   DEP_FILE = src\CMakeFiles\_lib.dir\Folders.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = src\CMakeFiles\_lib.dir
@@ -565,7 +565,7 @@ build src/CMakeFiles/_lib.dir/Folders.cpp.obj: CXX_COMPILER___lib_Debug C$:/User
   TARGET_COMPILE_PDB = src\CMakeFiles\_lib.dir\_lib.pdb
   TARGET_PDB = src\lib_lib.pdb
 
-build src/CMakeFiles/_lib.dir/Note.cpp.obj: CXX_COMPILER___lib_Debug C$:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/src/Note.cpp || cmake_object_order_depends_target__lib
+build src/CMakeFiles/_lib.dir/Note.cpp.obj: CXX_COMPILER___lib_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/src/Note.cpp || cmake_object_order_depends_target__lib
   DEP_FILE = src\CMakeFiles\_lib.dir\Note.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = src\CMakeFiles\_lib.dir
@@ -573,7 +573,7 @@ build src/CMakeFiles/_lib.dir/Note.cpp.obj: CXX_COMPILER___lib_Debug C$:/Users/F
   TARGET_COMPILE_PDB = src\CMakeFiles\_lib.dir\_lib.pdb
   TARGET_PDB = src\lib_lib.pdb
 
-build src/CMakeFiles/_lib.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj: CXX_COMPILER___lib_Debug C$:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/src/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp || cmake_object_order_depends_target__lib
+build src/CMakeFiles/_lib.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj: CXX_COMPILER___lib_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/src/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp || cmake_object_order_depends_target__lib
   DEP_FILE = src\CMakeFiles\_lib.dir\cmake-build-debug\CMakeFiles\3.26.4\CompilerIdCXX\CMakeCXXCompilerId.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = src\CMakeFiles\_lib.dir
@@ -581,7 +581,7 @@ build src/CMakeFiles/_lib.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/
   TARGET_COMPILE_PDB = src\CMakeFiles\_lib.dir\_lib.pdb
   TARGET_PDB = src\lib_lib.pdb
 
-build src/CMakeFiles/_lib.dir/main.cpp.obj: CXX_COMPILER___lib_Debug C$:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/src/main.cpp || cmake_object_order_depends_target__lib
+build src/CMakeFiles/_lib.dir/main.cpp.obj: CXX_COMPILER___lib_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/src/main.cpp || cmake_object_order_depends_target__lib
   DEP_FILE = src\CMakeFiles\_lib.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = src\CMakeFiles\_lib.dir
@@ -611,7 +611,7 @@ build src/lib_lib.a: CXX_STATIC_LIBRARY_LINKER___lib_Debug src/CMakeFiles/_lib.d
 # Utility command for install/local
 
 build src/CMakeFiles/install/local.util: CUSTOM_COMMAND src/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\src && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\src && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -623,7 +623,7 @@ build src/install/local: phony src/CMakeFiles/install/local.util
 # Utility command for install
 
 build src/CMakeFiles/install.util: CUSTOM_COMMAND src/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\src && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\src && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -635,7 +635,7 @@ build src/install: phony src/CMakeFiles/install.util
 # Utility command for edit_cache
 
 build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\src && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\src && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -652,7 +652,7 @@ build src/list_install_components: phony
 # Utility command for install/strip
 
 build src/CMakeFiles/install/strip.util: CUSTOM_COMMAND src/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\src && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\src && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -661,7 +661,7 @@ build src/install/strip: phony src/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/CMakeLists.txt
+# C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/CMakeLists.txt
 # =============================================================================
 
 
@@ -669,7 +669,7 @@ build src/install/strip: phony src/CMakeFiles/install/strip.util
 # Utility command for install/strip
 
 build tst/CMakeFiles/install/strip.util: CUSTOM_COMMAND tst/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\tst && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\tst && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -685,37 +685,37 @@ build tst/install/strip: phony tst/CMakeFiles/install/strip.util
 
 build cmake_object_order_depends_target__tst: phony || cmake_object_order_depends_target_gtest
 
-build tst/CMakeFiles/_tst.dir/FavouriteFoldersTest.cpp.obj: CXX_COMPILER___tst_Debug C$:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/tst/FavouriteFoldersTest.cpp || cmake_object_order_depends_target__tst
+build tst/CMakeFiles/_tst.dir/FavouriteFoldersTest.cpp.obj: CXX_COMPILER___tst_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/tst/FavouriteFoldersTest.cpp || cmake_object_order_depends_target__tst
   DEP_FILE = tst\CMakeFiles\_tst.dir\FavouriteFoldersTest.cpp.obj.d
   FLAGS = -g -std=gnu++14
-  INCLUDES = -isystem C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest/include -isystem C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest
+  INCLUDES = -isystem C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest/include -isystem C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest
   OBJECT_DIR = tst\CMakeFiles\_tst.dir
   OBJECT_FILE_DIR = tst\CMakeFiles\_tst.dir
   TARGET_COMPILE_PDB = tst\CMakeFiles\_tst.dir\
   TARGET_PDB = tst\_tst.pdb
 
-build tst/CMakeFiles/_tst.dir/FoldersTest.cpp.obj: CXX_COMPILER___tst_Debug C$:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/tst/FoldersTest.cpp || cmake_object_order_depends_target__tst
+build tst/CMakeFiles/_tst.dir/FoldersTest.cpp.obj: CXX_COMPILER___tst_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/tst/FoldersTest.cpp || cmake_object_order_depends_target__tst
   DEP_FILE = tst\CMakeFiles\_tst.dir\FoldersTest.cpp.obj.d
   FLAGS = -g -std=gnu++14
-  INCLUDES = -isystem C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest/include -isystem C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest
+  INCLUDES = -isystem C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest/include -isystem C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest
   OBJECT_DIR = tst\CMakeFiles\_tst.dir
   OBJECT_FILE_DIR = tst\CMakeFiles\_tst.dir
   TARGET_COMPILE_PDB = tst\CMakeFiles\_tst.dir\
   TARGET_PDB = tst\_tst.pdb
 
-build tst/CMakeFiles/_tst.dir/NoteTest.cpp.obj: CXX_COMPILER___tst_Debug C$:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/tst/NoteTest.cpp || cmake_object_order_depends_target__tst
+build tst/CMakeFiles/_tst.dir/NoteTest.cpp.obj: CXX_COMPILER___tst_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/tst/NoteTest.cpp || cmake_object_order_depends_target__tst
   DEP_FILE = tst\CMakeFiles\_tst.dir\NoteTest.cpp.obj.d
   FLAGS = -g -std=gnu++14
-  INCLUDES = -isystem C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest/include -isystem C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest
+  INCLUDES = -isystem C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest/include -isystem C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest
   OBJECT_DIR = tst\CMakeFiles\_tst.dir
   OBJECT_FILE_DIR = tst\CMakeFiles\_tst.dir
   TARGET_COMPILE_PDB = tst\CMakeFiles\_tst.dir\
   TARGET_PDB = tst\_tst.pdb
 
-build tst/CMakeFiles/_tst.dir/tst_main.cpp.obj: CXX_COMPILER___tst_Debug C$:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/tst/tst_main.cpp || cmake_object_order_depends_target__tst
+build tst/CMakeFiles/_tst.dir/tst_main.cpp.obj: CXX_COMPILER___tst_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/tst/tst_main.cpp || cmake_object_order_depends_target__tst
   DEP_FILE = tst\CMakeFiles\_tst.dir\tst_main.cpp.obj.d
   FLAGS = -g -std=gnu++14
-  INCLUDES = -isystem C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest/include -isystem C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest
+  INCLUDES = -isystem C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest/include -isystem C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest
   OBJECT_DIR = tst\CMakeFiles\_tst.dir
   OBJECT_FILE_DIR = tst\CMakeFiles\_tst.dir
   TARGET_COMPILE_PDB = tst\CMakeFiles\_tst.dir\
@@ -745,7 +745,7 @@ build tst/_tst.exe: CXX_EXECUTABLE_LINKER___tst_Debug tst/CMakeFiles/_tst.dir/Fa
 # Utility command for install/local
 
 build tst/CMakeFiles/install/local.util: CUSTOM_COMMAND tst/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\tst && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\tst && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -757,7 +757,7 @@ build tst/install/local: phony tst/CMakeFiles/install/local.util
 # Utility command for install
 
 build tst/CMakeFiles/install.util: CUSTOM_COMMAND tst/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\tst && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\tst && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -769,7 +769,7 @@ build tst/install: phony tst/CMakeFiles/install.util
 # Utility command for edit_cache
 
 build tst/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\tst && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\tst && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -780,7 +780,7 @@ build tst/edit_cache: phony tst/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build tst/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug\tst && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione -BC:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug\tst && "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione -BC:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiProgrammazione\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -830,42 +830,42 @@ build libgtest_main.a: phony lib/libgtest_main.a
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/cmake-build-debug
+# Folder: C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/cmake-build-debug
 
 build all: phony lib/all src/all tst/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/cmake-build-debug/lib
+# Folder: C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/cmake-build-debug/lib
 
 build lib/all: phony lib/googlemock/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/cmake-build-debug/lib/googlemock
+# Folder: C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/cmake-build-debug/lib/googlemock
 
 build lib/googlemock/all: phony lib/libgmock_main.a lib/libgmock.a lib/googletest/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/cmake-build-debug/lib/googletest
+# Folder: C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/cmake-build-debug/lib/googletest
 
 build lib/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/cmake-build-debug/src
+# Folder: C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/cmake-build-debug/src
 
 build src/all: phony src/_run.exe src/lib_lib.a
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/cmake-build-debug/tst
+# Folder: C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/cmake-build-debug/tst
 
 build tst/all: phony tst/_tst.exe
 

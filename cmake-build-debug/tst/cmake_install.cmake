@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/tst
+# Install script for directory: C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/tst
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
