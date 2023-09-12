@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Unit_Testing_Esame.exe"
+			"path" : "tst/_tst.exe"
 		},
 		{
-			"path" : "Unit_Testing_Esame.pdb"
+			"path" : "tst/_tst.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -13,11 +13,12 @@
 	{
 		"commands" : 
 		[
-			"add_executable"
+			"add_executable",
+			"target_link_libraries"
 		],
 		"files" : 
 		[
-			"CMakeLists.txt"
+			"tst/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -27,7 +28,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 11,
 				"parent" : 0
 			}
 		]
@@ -44,12 +51,25 @@
 					"fragment" : "-std=gnu++14"
 				}
 			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/Users/Filippo/CLionProjects/Unit_Testing_Esame/lib/googletest/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/Users/Filippo/CLionProjects/Unit_Testing_Esame/lib/googletest"
+				}
+			],
 			"language" : "CXX",
 			"languageStandard" : 
 			{
 				"backtraces" : 
 				[
-					1
+					2
 				],
 				"standard" : "14"
 			},
@@ -59,7 +79,14 @@
 			]
 		}
 	],
-	"id" : "Unit_Testing_Esame::@6890427a1f51a3e7e1df",
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "gtest::@919d8671e5e914cdef54"
+		}
+	],
+	"id" : "_tst::@bc08d5df49ffa9ee5cce",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -73,18 +100,28 @@
 				"role" : "flags"
 			},
 			{
+				"backtrace" : 2,
+				"fragment" : "..\\tst\\tst_main.cpp_lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "lib\\libgtest.a",
+				"role" : "libraries"
+			},
+			{
 				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "Unit_Testing_Esame",
-	"nameOnDisk" : "Unit_Testing_Esame.exe",
+	"name" : "_tst",
+	"nameOnDisk" : "_tst.exe",
 	"paths" : 
 	{
-		"build" : ".",
-		"source" : "."
+		"build" : "tst",
+		"source" : "tst"
 	},
 	"sourceGroups" : 
 	[
@@ -101,7 +138,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "tst/tst_main.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

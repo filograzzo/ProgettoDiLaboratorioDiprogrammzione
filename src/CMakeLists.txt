@@ -1,12 +1,9 @@
-cmake_minimum_required(VERSION 3.26)
-project(ProgettiDiLaboratorioDiProgrammazione)
+set(BINARY ${cmake_project_name})
 
-set(CMAKE_CXX_STANDARD 17)
+file(GLOB_RECURSE TEST_SOURCES LIST_DIRECTORIES false *.h *.cpp)
 
-add_executable(ProgettiDiLaboratorioDiProgrammazione main.cpp
-        Note.cpp
-        Note.h
-        Folders.cpp
-        Folders.h
-        FavouriteFolders.cpp
-        FavouriteFolders.h)
+set(SOURCES ${TEST_SOURCES})
+
+add_executable(${BINARY}_run ${SOURCES})
+
+add_library(${BINARY}_lib STATIC ${SOURCES})
