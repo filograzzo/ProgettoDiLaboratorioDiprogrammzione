@@ -156,7 +156,7 @@ rule CXX_EXECUTABLE_LINKER___tst_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Filippo\CLionProjects\Unit_Testing_Esame -BC:\Users\Filippo\CLionProjects\Unit_Testing_Esame\cmake-build-debug
+  command = "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione -BC:\Users\Filippo\CLionProjects\ProgettiDiLaboratorioDiProgrammazione\cmake-build-debug
   description = Re-running CMake...
   generator = 1
 

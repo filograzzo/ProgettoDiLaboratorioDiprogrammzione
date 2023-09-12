@@ -67,7 +67,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/Filippo/CLionProjects/Unit_Testing_Esame/cmake-build-debug"
+			"value" : "c:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -635,7 +635,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/Filippo/CLionProjects/Unit_Testing_Esame"
+			"value" : "C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1131,7 +1131,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : ""
+			"value" : "1.14.0"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_MAJOR",
@@ -1143,7 +1143,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : ""
+			"value" : "1"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_MINOR",
@@ -1155,7 +1155,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : ""
+			"value" : "14"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_PATCH",
@@ -1167,7 +1167,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : ""
+			"value" : "0"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_TWEAK",
@@ -1594,42 +1594,6 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "ProgettiDiLaboratorioDiProgrammazione_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/Filippo/CLionProjects/Unit_Testing_Esame/cmake-build-debug/tst"
-		},
-		{
-			"name" : "ProgettiDiLaboratorioDiProgrammazione_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "OFF"
-		},
-		{
-			"name" : "ProgettiDiLaboratorioDiProgrammazione_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/Filippo/CLionProjects/Unit_Testing_Esame/tst"
-		},
-		{
 			"name" : "Unit_Testing_Esame_BINARY_DIR",
 			"properties" : 
 			[
@@ -1639,7 +1603,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Filippo/CLionProjects/Unit_Testing_Esame/cmake-build-debug"
+			"value" : "C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/cmake-build-debug"
 		},
 		{
 			"name" : "Unit_Testing_Esame_IS_TOP_LEVEL",
@@ -1663,7 +1627,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Filippo/CLionProjects/Unit_Testing_Esame"
+			"value" : "C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione"
 		},
 		{
 			"name" : "_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX",
@@ -1735,7 +1699,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/Filippo/CLionProjects/Unit_Testing_Esame/cmake-build-debug/lib/googletest/generated"
+			"value" : "C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/cmake-build-debug/lib/googletest/generated"
 		},
 		{
 			"name" : "gmock_BINARY_DIR",
@@ -1747,7 +1711,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Filippo/CLionProjects/Unit_Testing_Esame/cmake-build-debug/lib/googlemock"
+			"value" : "C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/cmake-build-debug/lib/googlemock"
 		},
 		{
 			"name" : "gmock_IS_TOP_LEVEL",
@@ -1771,7 +1735,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Filippo/CLionProjects/Unit_Testing_Esame/lib/googlemock"
+			"value" : "C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googlemock"
 		},
 		{
 			"name" : "gmock_build_tests",
@@ -1799,7 +1763,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Filippo/CLionProjects/Unit_Testing_Esame/cmake-build-debug/lib"
+			"value" : "C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/cmake-build-debug/lib"
 		},
 		{
 			"name" : "googletest-distribution_IS_TOP_LEVEL",
@@ -1823,7 +1787,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Filippo/CLionProjects/Unit_Testing_Esame/lib"
+			"value" : "C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib"
 		},
 		{
 			"name" : "gtest_BINARY_DIR",
@@ -1835,7 +1799,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Filippo/CLionProjects/Unit_Testing_Esame/cmake-build-debug/lib/googletest"
+			"value" : "C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/cmake-build-debug/lib/googletest"
 		},
 		{
 			"name" : "gtest_IS_TOP_LEVEL",
@@ -1859,7 +1823,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Filippo/CLionProjects/Unit_Testing_Esame/lib/googletest"
+			"value" : "C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/lib/googletest"
 		},
 		{
 			"name" : "gtest_build_samples",

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Filippo/CLionProjects/Unit_Testing_Esame/src
+# Install script for directory: C:/Users/Filippo/CLionProjects/ProgettiDiLaboratorioDiProgrammazione/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
