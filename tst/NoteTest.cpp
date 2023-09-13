@@ -1,6 +1,8 @@
-#include <gtest/gtest.h>
+#include "gtest/gtest.h"
+#include "../src/Note.h"
 
-TEST(NoteTest, SetTitolTest){ //testo setTitol()
+TEST(TestNote, SetTitolTest){ //testo setTitol()
+
 
 }
 
