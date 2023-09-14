@@ -31,11 +31,15 @@ public:
 
     bool removeNote (Note& note);
 
-    bool findNoteWithTitol (const Note& note, const std::string& titol);
+    Note* findNoteWithTitol ( const std::string& titol);
 
     int getCounter() const;
 
     void setCounter(int counter);
+
+    const std::vector<Note> &getNotesVector() const;
+
+    void setNotesVector(const std::vector<Note> &notesVector);
 
 
 };

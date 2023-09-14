@@ -2,6 +2,7 @@
 #include "../src/Note.h"
 
 class NoteFixture : public ::testing::Test {
+
 protected:
 
     Note* nota;

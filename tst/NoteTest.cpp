@@ -2,15 +2,33 @@
 #include "../src/Note.h"
 #include "NoteFixture.cpp"
 
+// SETTER E GETTER TITOLO
+
 TEST_F (NoteFixture, getTitolTest){
 
     ASSERT_EQ ( nota -> getTitol(), "Pellicano" );
 }
 
+TEST_F (NoteFixture, setTitolTest){
+
+nota->setTitol("Nota su un pellicano");
+ASSERT_EQ ( nota -> getTitol(), "Nota su un pellicano" );
+}
+
+// SETTER E GETTER TESTO
+
 TEST_F (NoteFixture, getTextTest){
 
     ASSERT_EQ ( nota -> getTitol(), "C'era un pellicano sulla spiaggia." );
 }
+
+TEST_F (NoteFixture, setTextTest){
+
+    nota->setText("Oggi ho visto un pellicano sulla spiaggia che mangiava un pezzo di pane");
+    ASSERT_EQ ( nota -> getTitol(), "Oggi ho visto un pellicano sulla spiaggia che mangiava un pezzo di pane" );
+}
+
+// SETTER E GETTER BLOCKED
 
 TEST_F (NoteFixture, isBlockedTest){
 
@@ -23,17 +41,9 @@ TEST_F (NoteFixture, setBlockedTest){
     ASSERT_EQ (nota -> isBlocked(), true );
 }
 
-TEST_F (NoteFixture, setTitolTest){
 
-    nota->setTitol("Nota su un pellicano");
-    ASSERT_EQ ( nota -> getTitol(), "Nota su un pellicano" );
-}
 
-TEST_F (NoteFixture, setTextTest){
 
-    nota->setText("Oggi ho visto un pellicano sulla spiaggia che mangiava un pezzo di pane");
-    ASSERT_EQ ( nota -> getTitol(), "Oggi ho visto un pellicano sulla spiaggia che mangiava un pezzo di pane" );
-}
 
 
 
