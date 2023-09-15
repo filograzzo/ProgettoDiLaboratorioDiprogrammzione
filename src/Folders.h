@@ -15,7 +15,6 @@ class Folders {
 protected:
     std::string name; //nome del folder
     std::vector<Note> notesVector; //vettore di lunghezza variabile
-    int counter = 0;
 
 public:
 
@@ -33,13 +32,9 @@ public:
 
     Note* findNoteWithTitol ( const std::string& titol);
 
-    int getCounter() const;
+    const std::vector<Note> &getNotesVector() const; //non ha senso ci sia un setter di notevector, è creato una volta sola ed è quello relativo al folder stesso
 
-    void setCounter(int counter);
 
-    const std::vector<Note> &getNotesVector() const;
-
-    void setNotesVector(const std::vector<Note> &notesVector);
 
 
 };

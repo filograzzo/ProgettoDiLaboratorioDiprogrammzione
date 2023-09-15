@@ -18,39 +18,68 @@ TEST_F ( FoldersFixture, setTitolTest ){
 
 }
 
-// SETTER E GETTER COUNTER
-
-TEST_F ( FoldersFixture, getCounterTest ){
-
-    ASSERT_EQ ( folders->getCounter(), 0 );
-
-}
-
-TEST_F ( FoldersFixture, setCounterTest ){
-
-    folders->setCounter(10);
-    ASSERT_EQ ( folders->getCounter(), 10);
-
-}
-
 // ADDNOTE E REMOVENOTE
 
 TEST_F (FoldersFixture, addNoteAndRemoveNoteTest ){
 
     folders->addNote(nota );
-    ASSERT_EQ( (folders->findNoteWithTitol(nota.getTitol()))->getTitol(), "Esempio");
+    bool found = false;
+    for ( const Note& iter : folders->getNotesVector()){
+        if ( iter.getTitol() == nota.getTitol() ){
+            found = true;
+            break;
+        }
+    }
+    ASSERT_EQ( found, true );
+
+
+}
+
+TEST_F(FoldersFixture, removeNoteTest){
+
+    folders->addNote(nota); //già controllato sopra come operazione
+    folders->removeNote(nota );
+    bool found = false;
+    for ( const Note& iter : folders->getNotesVector()) {
+        if (iter.getTitol() == nota.getTitol()) {
+            found = true;
+            break;
+        }
+    }
+
+    ASSERT_EQ ( found, false );
+
+}
+
+// GET NUMBER OF NOTES
+
+TEST_F ( FoldersFixture, getNumberOfNotesTest ){
+
+    ASSERT_EQ ( folders->getNumberOfNotes(), 0 );
+
+    folders->addNote(nota);
+    ASSERT_EQ ( folders->getNumberOfNotes(), 1 );
+
+    folders->addNote(nota);
+    ASSERT_EQ ( folders->getNumberOfNotes(), 1 ); //se provi ad aggiungere la stessa nota non dovrebbe poterlo fare
+
+    folders->removeNote(nota);
+    ASSERT_EQ ( folders->getNumberOfNotes(), 0 );
+
+    folders->removeNote(nota);
+    ASSERT_EQ ( folders->getNumberOfNotes(), 0 ); //se non la trova non dovrebbe fare nulla
+
+}
+
+//  FIND NOTE WITH TITOL TEST
+
+TEST_F ( FoldersFixture, findNoteWithTitolTest ){ //ho già testato add e remove
+
+    folders->addNote(nota );
+    ASSERT_EQ( (folders->findNoteWithTitol(nota.getTitol()))->getTitol(), "Esempio"); //il titolo della nota aggiunta è uguale ad esempio
 
     folders->removeNote(nota );
     ASSERT_EQ ( folders->findNoteWithTitol(nota.getTitol()) , nullptr );
 
 }
 
-// todo FIND NOTE WITH TITOL
-
-TEST_F ( FoldersFixture, findNoteWithTitolTest ){
-
-
-
-}
-
-//todo continuare a fare test necessari

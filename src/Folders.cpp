@@ -13,9 +13,11 @@ void Folders::setName(const std::string &name) {
     Folders::name = name;
 }
 
+
 int Folders::getNumberOfNotes() const {
     return this->notesVector.size();
 }
+
 
 Folders::Folders(std::string name) {
     this->name = name;
@@ -28,7 +30,6 @@ bool Folders::addNote(Note& note) {
         }
     }
     notesVector.push_back(note); // se non trova nessuno col titolo uguale, aggiunge la nota e ritorna vero
-    counter++;
     return true;
 }
 
@@ -36,7 +37,6 @@ bool Folders::removeNote(Note& note) {
     for (auto it = notesVector.begin(); it != notesVector.end(); ++it){
         if (it->getTitol() == note.getTitol()){
             notesVector.erase(it); //se il titolo della nota da cancellare viene trovato allora la nota è cancellata e ritorna vero
-            counter--;
             return true;
         }
     }
@@ -53,18 +53,6 @@ Note* Folders::findNoteWithTitol ( const std::string& titol ){ //ritorna true se
     return nullptr;
 }
 
-int Folders::getCounter() const {
-    return counter;
-}
-
-void Folders::setCounter(int counter) {
-    Folders::counter = counter;
-}
-
 const std::vector<Note> &Folders::getNotesVector() const {
     return notesVector;
-}
-
-void Folders::setNotesVector(const std::vector<Note> &notesVector) {
-    Folders::notesVector = notesVector;
 }
