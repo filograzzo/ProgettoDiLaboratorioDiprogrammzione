@@ -651,6 +651,13 @@ build tst/install/strip: phony tst/CMakeFiles/install/strip.util
 
 build cmake_object_order_depends_target__tst: phony || cmake_object_order_depends_target_gtest
 
+build tst/CMakeFiles/_tst.dir/FavouriteFoldersFixture.cpp.obj: CXX_COMPILER___tst_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/tst/FavouriteFoldersFixture.cpp || cmake_object_order_depends_target__tst
+  DEP_FILE = tst\CMakeFiles\_tst.dir\FavouriteFoldersFixture.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -isystem C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest/include -isystem C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googletest
+  OBJECT_DIR = tst\CMakeFiles\_tst.dir
+  OBJECT_FILE_DIR = tst\CMakeFiles\_tst.dir
+
 build tst/CMakeFiles/_tst.dir/FavouriteFoldersTest.cpp.obj: CXX_COMPILER___tst_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/tst/FavouriteFoldersTest.cpp || cmake_object_order_depends_target__tst
   DEP_FILE = tst\CMakeFiles\_tst.dir\FavouriteFoldersTest.cpp.obj.d
   FLAGS = -g -std=gnu++14
@@ -701,9 +708,9 @@ build tst/CMakeFiles/_tst.dir/tst_main.cpp.obj: CXX_COMPILER___tst_Debug C$:/Use
 #############################################
 # Link the executable tst\_tst.exe
 
-build tst/_tst.exe: CXX_EXECUTABLE_LINKER___tst_Debug tst/CMakeFiles/_tst.dir/FavouriteFoldersTest.cpp.obj tst/CMakeFiles/_tst.dir/FoldersFixture.cpp.obj tst/CMakeFiles/_tst.dir/FoldersTest.cpp.obj tst/CMakeFiles/_tst.dir/NoteFixture.cpp.obj tst/CMakeFiles/_tst.dir/NoteTest.cpp.obj tst/CMakeFiles/_tst.dir/tst_main.cpp.obj | ../tst/FavouriteFoldersTest.cpp ../tst/FoldersFixture.cpp ../tst/FoldersTest.cpp ../tst/NoteFixture.cpp ../tst/NoteTest.cpp ../tst/tst_main.cpp_lib lib/libgtest.a || lib/libgtest.a
+build tst/_tst.exe: CXX_EXECUTABLE_LINKER___tst_Debug tst/CMakeFiles/_tst.dir/FavouriteFoldersFixture.cpp.obj tst/CMakeFiles/_tst.dir/FavouriteFoldersTest.cpp.obj tst/CMakeFiles/_tst.dir/FoldersFixture.cpp.obj tst/CMakeFiles/_tst.dir/FoldersTest.cpp.obj tst/CMakeFiles/_tst.dir/NoteFixture.cpp.obj tst/CMakeFiles/_tst.dir/NoteTest.cpp.obj tst/CMakeFiles/_tst.dir/tst_main.cpp.obj | ../tst/FavouriteFoldersFixture.cpp ../tst/FavouriteFoldersTest.cpp ../tst/FoldersFixture.cpp ../tst/FoldersTest.cpp ../tst/NoteFixture.cpp ../tst/NoteTest.cpp ../tst/tst_main.cpp_lib lib/libgtest.a || lib/libgtest.a
   FLAGS = -g
-  LINK_LIBRARIES = ../tst/FavouriteFoldersTest.cpp  ../tst/FoldersFixture.cpp  ../tst/FoldersTest.cpp  ../tst/NoteFixture.cpp  ../tst/NoteTest.cpp  ../tst/tst_main.cpp_lib  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = ../tst/FavouriteFoldersFixture.cpp  ../tst/FavouriteFoldersTest.cpp  ../tst/FoldersFixture.cpp  ../tst/FoldersTest.cpp  ../tst/NoteFixture.cpp  ../tst/NoteTest.cpp  ../tst/tst_main.cpp_lib  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = tst\CMakeFiles\_tst.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

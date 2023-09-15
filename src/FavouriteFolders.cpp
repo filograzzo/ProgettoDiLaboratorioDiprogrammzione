@@ -12,6 +12,9 @@ bool FavouriteFolders::isFavourite() const {
 
 void FavouriteFolders::setFavourite(bool favourite) {
     FavouriteFolders::favourite = favourite;
+    if ( favourite == false )
+        counter --;
+    else counter ++;
 }
 
 int FavouriteFolders::getCounter() {

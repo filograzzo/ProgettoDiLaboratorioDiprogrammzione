@@ -1,4 +1,2 @@
-//
-// Created by Filippo on 12/09/2023.
-//
-
+#include "gtest/gtest.h"
+#include "../src/FavouriteFolders.h"
