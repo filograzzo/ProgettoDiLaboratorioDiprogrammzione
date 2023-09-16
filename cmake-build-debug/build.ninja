@@ -457,6 +457,18 @@ build lib/googletest/install/strip: phony lib/googletest/CMakeFiles/install/stri
 
 build cmake_object_order_depends_target__run: phony || src/CMakeFiles/_run.dir
 
+build src/CMakeFiles/_run.dir/ConcreteObserver.cpp.obj: CXX_COMPILER___run_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/src/ConcreteObserver.cpp || cmake_object_order_depends_target__run
+  DEP_FILE = src\CMakeFiles\_run.dir\ConcreteObserver.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = src\CMakeFiles\_run.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\_run.dir
+
+build src/CMakeFiles/_run.dir/ConcreteSubject.cpp.obj: CXX_COMPILER___run_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/src/ConcreteSubject.cpp || cmake_object_order_depends_target__run
+  DEP_FILE = src\CMakeFiles\_run.dir\ConcreteSubject.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = src\CMakeFiles\_run.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\_run.dir
+
 build src/CMakeFiles/_run.dir/FavouriteFolders.cpp.obj: CXX_COMPILER___run_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/src/FavouriteFolders.cpp || cmake_object_order_depends_target__run
   DEP_FILE = src\CMakeFiles\_run.dir\FavouriteFolders.cpp.obj.d
   FLAGS = -g -std=gnu++14
@@ -495,7 +507,7 @@ build src/CMakeFiles/_run.dir/main.cpp.obj: CXX_COMPILER___run_Debug C$:/Users/F
 #############################################
 # Link the executable src\_run.exe
 
-build src/_run.exe: CXX_EXECUTABLE_LINKER___run_Debug src/CMakeFiles/_run.dir/FavouriteFolders.cpp.obj src/CMakeFiles/_run.dir/Folders.cpp.obj src/CMakeFiles/_run.dir/Note.cpp.obj src/CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj src/CMakeFiles/_run.dir/main.cpp.obj
+build src/_run.exe: CXX_EXECUTABLE_LINKER___run_Debug src/CMakeFiles/_run.dir/ConcreteObserver.cpp.obj src/CMakeFiles/_run.dir/ConcreteSubject.cpp.obj src/CMakeFiles/_run.dir/FavouriteFolders.cpp.obj src/CMakeFiles/_run.dir/Folders.cpp.obj src/CMakeFiles/_run.dir/Note.cpp.obj src/CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj src/CMakeFiles/_run.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = src\CMakeFiles\_run.dir
@@ -525,6 +537,18 @@ build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
 # Order-only phony target for _lib
 
 build cmake_object_order_depends_target__lib: phony || src/CMakeFiles/_lib.dir
+
+build src/CMakeFiles/_lib.dir/ConcreteObserver.cpp.obj: CXX_COMPILER___lib_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/src/ConcreteObserver.cpp || cmake_object_order_depends_target__lib
+  DEP_FILE = src\CMakeFiles\_lib.dir\ConcreteObserver.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = src\CMakeFiles\_lib.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\_lib.dir
+
+build src/CMakeFiles/_lib.dir/ConcreteSubject.cpp.obj: CXX_COMPILER___lib_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/src/ConcreteSubject.cpp || cmake_object_order_depends_target__lib
+  DEP_FILE = src\CMakeFiles\_lib.dir\ConcreteSubject.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = src\CMakeFiles\_lib.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\_lib.dir
 
 build src/CMakeFiles/_lib.dir/FavouriteFolders.cpp.obj: CXX_COMPILER___lib_Debug C$:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/src/FavouriteFolders.cpp || cmake_object_order_depends_target__lib
   DEP_FILE = src\CMakeFiles\_lib.dir\FavouriteFolders.cpp.obj.d
@@ -564,7 +588,7 @@ build src/CMakeFiles/_lib.dir/main.cpp.obj: CXX_COMPILER___lib_Debug C$:/Users/F
 #############################################
 # Link the static library src\lib_lib.a
 
-build src/lib_lib.a: CXX_STATIC_LIBRARY_LINKER___lib_Debug src/CMakeFiles/_lib.dir/FavouriteFolders.cpp.obj src/CMakeFiles/_lib.dir/Folders.cpp.obj src/CMakeFiles/_lib.dir/Note.cpp.obj src/CMakeFiles/_lib.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj src/CMakeFiles/_lib.dir/main.cpp.obj
+build src/lib_lib.a: CXX_STATIC_LIBRARY_LINKER___lib_Debug src/CMakeFiles/_lib.dir/ConcreteObserver.cpp.obj src/CMakeFiles/_lib.dir/ConcreteSubject.cpp.obj src/CMakeFiles/_lib.dir/FavouriteFolders.cpp.obj src/CMakeFiles/_lib.dir/Folders.cpp.obj src/CMakeFiles/_lib.dir/Note.cpp.obj src/CMakeFiles/_lib.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj src/CMakeFiles/_lib.dir/main.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = src\CMakeFiles\_lib.dir
   POST_BUILD = cd .

@@ -1,7 +1,5 @@
-//
-// Created by Filippo on 07/09/2023.
-//
 
+#include <iostream>
 #include "FavouriteFolders.h"
 
 FavouriteFolders::FavouriteFolders(const std::string &name) : Folders(name) {}
@@ -23,4 +21,13 @@ int FavouriteFolders::getCounter() {
 
 void FavouriteFolders::setCounter(int counter) {
     FavouriteFolders::counter = counter;
+}
+
+void FavouriteFolders::listFavourite() const {
+
+    std::cout << "La lista " << this->name << " messa tra i Folder preferiti contine le note: " << std::endl;
+    for ( Note it : notesVector ){
+        std::cout << " - " << it.getTitol()  << " ;" << std::endl;
+    }
+
 }

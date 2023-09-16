@@ -10,6 +10,7 @@
 #include <vector>
 #include "Note.h"
 #include <algorithm>
+#include "ConcreteSubject.h"
 
 class Folders {
 protected:

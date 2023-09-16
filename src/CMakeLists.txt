@@ -6,4 +6,4 @@ set(SOURCES ${TEST_SOURCES})
 
 add_executable(${BINARY}_run ${SOURCES})
 
-add_library(${BINARY}_lib STATIC ${SOURCES})
+add_library(${BINARY}_lib STATIC ${SOURCES} Subject.h Subject.h Observer.h ConcreteSubject.cpp ConcreteSubject.h ConcreteObserver.cpp ConcreteObserver.h)

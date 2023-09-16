@@ -1,6 +1,3 @@
-//
-// Created by Filippo on 07/09/2023.
-//
 
 #ifndef PROGETTIDILABORATORIODIPROGRAMMAZIONE_FAVOURITEFOLDERS_H
 #define PROGETTIDILABORATORIODIPROGRAMMAZIONE_FAVOURITEFOLDERS_H
@@ -24,6 +21,9 @@ public:
     static int getCounter();
 
     static void setCounter(int counter);
+
+    //nuovo metodo, stampa i nomi di tutte le note all'interno del folder preferito
+    void listFavourite () const;
 
 
 };

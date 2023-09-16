@@ -1028,7 +1028,7 @@ GTEST_DISABLE_MSC_DEPRECATED_PUSH_()
 
 #if GTEST_HAS_STREAM_REDIRECTION
 
-// Object that captures an output stream (stdout/stderr).
+// Observer that captures an output stream (stdout/stderr).
 class CapturedStream {
  public:
   // The ctor redirects the stream to a temporary file.
