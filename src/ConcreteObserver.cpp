@@ -2,8 +2,8 @@
 #include <iostream>
 #include "ConcreteObserver.h"
 
-void ConcreteObserver::update( Folders* f ) {
+void ConcreteObserver::update(  std::string name, int note ) {
 
-    std::cout << "All'interno del folder ' " << f->getName() << " ' sono presenti " << f->getNumberOfNotes() << " note." << std::endl;
+    std::cout << "È avvenuto un cambiamento nel Folder " << name << " a cui sei iscritto adesso: adesso le note presenti sono " << note << "." << std::endl;
     
 }

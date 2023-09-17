@@ -7,6 +7,6 @@
 class Observer {
 
 public:
-    virtual void update( Folders* f )=0;
+    virtual void update( std::string name, int note )=0;
 };
 #endif //UNIT_TESTING_ESAME_OBSERVER_H

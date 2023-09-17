@@ -11,7 +11,7 @@
 class ConcreteObserver : public Observer {
 
 public:
-    virtual void update( Folders * f) override; //dico quante note sono presenti all'interno del folder
+    virtual void update(  std::string name, int note ) override; //dico quante note sono presenti all'interno del folder
 };
 
 

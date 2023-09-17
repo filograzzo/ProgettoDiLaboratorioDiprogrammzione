@@ -10,12 +10,17 @@
 #include <vector>
 #include "Note.h"
 #include <algorithm>
-#include "ConcreteSubject.h"
+#include "Subject.h"
 
-class Folders {
+class Folders : public Subject{
+private:
+    std::vector<Observer*> observerList; //lista di osservatori
+    
 protected:
     std::string name; //nome del folder
     std::vector<Note> notesVector; //vettore di lunghezza variabile
+
+
 
 public:
 
@@ -34,6 +39,12 @@ public:
     Note* findNoteWithTitol ( const std::string& titol);
 
     const std::vector<Note> &getNotesVector() const; //non ha senso ci sia un setter di notevector, è creato una volta sola ed è quello relativo al folder stesso
+
+    //da subject
+
+    void addObserver(Observer *o) override;
+    void removeObserver (Observer *o) override;
+    void notifyObservers(  ) override;
 
 
 
