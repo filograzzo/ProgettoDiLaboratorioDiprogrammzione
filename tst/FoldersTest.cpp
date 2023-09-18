@@ -1,16 +1,16 @@
 #include "gtest/gtest.h"
 #include "../src/Folders.h"
-#include "FoldersFixture.cpp"
+#include "FoldersFixture.h"
 
 // SETTER E GETTER TITOLO
 
-TEST_F ( FoldersFixture, getTitolTest ){
+TEST_F ( FoldersFixture, getFoldersTitolTest ){
 
     ASSERT_EQ ( folders->getName(), "Raccolta di note sui gabbiani" );
 
 }
 
-TEST_F ( FoldersFixture, setTitolTest ){
+TEST_F ( FoldersFixture, setFoldersTitolTest ){
 
     std::string name = "Una raccolta di note sui gabbiani";
     folders->setName( name );
@@ -20,7 +20,7 @@ TEST_F ( FoldersFixture, setTitolTest ){
 
 // ADDNOTE E REMOVENOTE
 
-TEST_F (FoldersFixture, addNoteAndRemoveNoteTest ){
+TEST_F (FoldersFixture, addNoteAndRemoveNoteFoldersTest ){
 
     folders->addNote(nota );
     bool found = false;
@@ -35,7 +35,7 @@ TEST_F (FoldersFixture, addNoteAndRemoveNoteTest ){
 
 }
 
-TEST_F(FoldersFixture, removeNoteTest){
+TEST_F(FoldersFixture, removeNoteFoldersTest){
 
     folders->addNote(nota); //già controllato sopra come operazione
     folders->removeNote(nota );
@@ -53,7 +53,7 @@ TEST_F(FoldersFixture, removeNoteTest){
 
 // GET NUMBER OF NOTES
 
-TEST_F ( FoldersFixture, getNumberOfNotesTest ){
+TEST_F ( FoldersFixture, getNumberOfNotesFoldersTest ){
 
     ASSERT_EQ ( folders->getNumberOfNotes(), 0 );
 
@@ -73,7 +73,7 @@ TEST_F ( FoldersFixture, getNumberOfNotesTest ){
 
 //  FIND NOTE WITH TITOL TEST
 
-TEST_F ( FoldersFixture, findNoteWithTitolTest ){ //ho già testato add e remove
+TEST_F ( FoldersFixture, findNoteWithTitolFoldersTest ){ //ho già testato add e remove
 
     folders->addNote(nota );
     ASSERT_EQ( (folders->findNoteWithTitol(nota.getTitol()))->getTitol(), "Esempio"); //il titolo della nota aggiunta è uguale ad esempio

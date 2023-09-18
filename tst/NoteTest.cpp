@@ -1,15 +1,15 @@
 #include "gtest/gtest.h"
 #include "../src/Note.h"
-#include "NoteFixture.cpp"
+#include "NoteFixture.h"
 
 // SETTER E GETTER TITOLO
 
-TEST_F (NoteFixture, getTitolTest){
+TEST_F (NoteFixture, getNoteTitolTest){
 
     ASSERT_EQ ( nota -> getTitol(), "Pellicano" );
 }
 
-TEST_F (NoteFixture, setTitolTest){
+TEST_F (NoteFixture, setNoteTitolTest){
 
 nota->setTitol("Nota su un pellicano");
 ASSERT_EQ ( nota -> getTitol(), "Nota su un pellicano" );
@@ -17,12 +17,12 @@ ASSERT_EQ ( nota -> getTitol(), "Nota su un pellicano" );
 
 // SETTER E GETTER TESTO
 
-TEST_F (NoteFixture, getTextTest){
+TEST_F (NoteFixture, getNoteTextTest){
 
     ASSERT_EQ ( nota -> getText(), "C'era un pellicano sulla spiaggia." );
 }
 
-TEST_F (NoteFixture, setTextTest){
+TEST_F (NoteFixture, setNoteTextTest){
 
     nota->setText("Oggi ho visto un pellicano sulla spiaggia che mangiava un pezzo di pane");
     ASSERT_EQ ( nota -> getText(), "Oggi ho visto un pellicano sulla spiaggia che mangiava un pezzo di pane" );
@@ -30,12 +30,12 @@ TEST_F (NoteFixture, setTextTest){
 
 // SETTER E GETTER BLOCKED
 
-TEST_F (NoteFixture, isBlockedTest){
+TEST_F (NoteFixture, isBlockedNoteTest){
 
     ASSERT_EQ ( nota -> isBlocked(), false );
 }
 
-TEST_F (NoteFixture, setBlockedTest){
+TEST_F (NoteFixture, setBlockedNoteTest){
 
     nota->setBlocked(true);
     ASSERT_EQ (nota -> isBlocked(), true );
@@ -43,7 +43,7 @@ TEST_F (NoteFixture, setBlockedTest){
 
 // TEST PER VEDERE SE BLOCKED FUNZIONA
 
-TEST_F(NoteFixture, blockedOnSetMethods){ //se blocked è true, setTitol e setText non devono funzionare
+TEST_F(NoteFixture, blockedOnSetMethodsNoteTest){ //se blocked è true, setTitol e setText non devono funzionare
 
     nota->setBlocked(true);
 
