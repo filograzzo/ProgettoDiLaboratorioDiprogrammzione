@@ -1,9 +1,10 @@
-#include "gtest/gtest.h"
-#include "../src/Note.h"
 
 
 #ifndef UNIT_TESTING_ESAME_NOTEFIXTURE_H
 #define UNIT_TESTING_ESAME_NOTEFIXTURE_H
+
+#include "gtest/gtest.h"
+#include "../src/Note.h"
 
 
 class NoteFixture : public ::testing::Test {

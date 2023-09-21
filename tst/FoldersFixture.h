@@ -1,10 +1,10 @@
-#include "gtest/gtest.h"
-#include "../src/Folders.h"
-#include "../src/Note.h"
 
 #ifndef UNIT_TESTING_ESAME_FOLDERSFIXTURE_H
 #define UNIT_TESTING_ESAME_FOLDERSFIXTURE_H
 
+#include "gtest/gtest.h"
+#include "../src/Folders.h"
+#include "../src/Note.h"
 
 class FoldersFixture : public ::testing::Test {
 

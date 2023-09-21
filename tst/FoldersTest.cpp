@@ -3,13 +3,13 @@
 
 // SETTER E GETTER TITOLO
 
-TEST_F ( FoldersFixture, getFoldersTitolTest ){
+TEST_F ( FoldersFixture, getFoldersTitleTest ){
 
     ASSERT_EQ ( folders->getName(), "Raccolta di note sui gabbiani" );
 
 }
 
-TEST_F ( FoldersFixture, setFoldersTitolTest ){
+TEST_F ( FoldersFixture, setFoldersTitleTest ){
 
     std::string name = "Una raccolta di note sui gabbiani";
     folders->setName( name );
@@ -72,7 +72,7 @@ TEST_F ( FoldersFixture, getNumberOfNotesFoldersTest ){
 
 //  FIND NOTE WITH TITOL TEST
 
-TEST_F ( FoldersFixture, findNoteWithTitolFoldersTest ){ //ho già testato add e remove
+TEST_F ( FoldersFixture, findNoteWithTitleFoldersTest ){ //ho già testato add e remove
 
     folders->addNote(nota );
     ASSERT_EQ( (folders->findNoteWithTitle(nota.getTitle()))->getTitle(), "Esempio"); //il titolo della nota aggiunta è uguale ad esempio

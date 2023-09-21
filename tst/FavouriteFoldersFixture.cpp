@@ -1,5 +1,5 @@
 
-#include "FavoutireFoldersFixture.h"
+#include "FavouriteFoldersFixture.h"
 
 void FavouriteFoldersFixture::SetUp() {
     Test::SetUp();

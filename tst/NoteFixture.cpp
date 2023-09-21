@@ -2,9 +2,9 @@
 
 
 void NoteFixture::SetUp()  {
-    std::string titol = "Pellicano";
+    std::string title = "Pellicano";
     std::string text = "C'era un pellicano sulla spiaggia.";
-    nota = new Note( titol , text);
+    nota = new Note( title , text);
 }
 
 void NoteFixture::TearDown()  {

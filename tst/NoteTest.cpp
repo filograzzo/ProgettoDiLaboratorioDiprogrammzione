@@ -3,12 +3,12 @@
 
 // SETTER E GETTER TITOLO
 
-TEST_F (NoteFixture, getNoteTitolTest){
+TEST_F (NoteFixture, getNoteTitleTest){
 
     ASSERT_EQ ( nota -> getTitle(), "Pellicano" );
 }
 
-TEST_F (NoteFixture, setNoteTitolTest){
+TEST_F (NoteFixture, setNoteTitleTest){
 
 nota->setTitle("Nota su un pellicano");
 ASSERT_EQ ( nota -> getTitle(), "Nota su un pellicano" );
