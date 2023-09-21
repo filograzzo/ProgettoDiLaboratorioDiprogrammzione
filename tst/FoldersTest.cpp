@@ -1,5 +1,4 @@
-#include "gtest/gtest.h"
-#include "../src/Folders.h"
+
 #include "FoldersFixture.h"
 
 // SETTER E GETTER TITOLO
@@ -25,7 +24,7 @@ TEST_F (FoldersFixture, addNoteAndRemoveNoteFoldersTest ){
     folders->addNote(nota );
     bool found = false;
     for ( const Note& iter : folders->getNotesVector()){
-        if ( iter.getTitol() == nota.getTitol() ){
+        if ( iter.getTitle() == nota.getTitle() ){
             found = true;
             break;
         }
@@ -41,7 +40,7 @@ TEST_F(FoldersFixture, removeNoteFoldersTest){
     folders->removeNote(nota );
     bool found = false;
     for ( const Note& iter : folders->getNotesVector()) {
-        if (iter.getTitol() == nota.getTitol()) {
+        if (iter.getTitle() == nota.getTitle()) {
             found = true;
             break;
         }
@@ -76,10 +75,10 @@ TEST_F ( FoldersFixture, getNumberOfNotesFoldersTest ){
 TEST_F ( FoldersFixture, findNoteWithTitolFoldersTest ){ //ho già testato add e remove
 
     folders->addNote(nota );
-    ASSERT_EQ( (folders->findNoteWithTitol(nota.getTitol()))->getTitol(), "Esempio"); //il titolo della nota aggiunta è uguale ad esempio
+    ASSERT_EQ( (folders->findNoteWithTitle(nota.getTitle()))->getTitle(), "Esempio"); //il titolo della nota aggiunta è uguale ad esempio
 
     folders->removeNote(nota );
-    ASSERT_EQ ( folders->findNoteWithTitol(nota.getTitol()) , nullptr );
+    ASSERT_EQ ( folders->findNoteWithTitle(nota.getTitle()) , nullptr );
 
 }
 

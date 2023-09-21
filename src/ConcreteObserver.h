@@ -7,11 +7,14 @@
 
 
 #include "Observer.h"
+class Subject; //forward declaration ??
 
 class ConcreteObserver : public Observer {
 
 public:
     virtual void update(  std::string name, int note ) override; //dico quante note sono presenti all'interno del folder
+    virtual void subscribe(Subject& subject);
+    virtual void unsubscribe(Subject& subject);
 };
 
 

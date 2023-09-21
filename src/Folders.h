@@ -36,7 +36,7 @@ public:
 
     bool removeNote (Note& note);
 
-    Note* findNoteWithTitol ( const std::string& titol);
+    Note* findNoteWithTitle ( const std::string& title);
 
     const std::vector<Note> &getNotesVector() const; //non ha senso ci sia un setter di notevector, è creato una volta sola ed è quello relativo al folder stesso
 

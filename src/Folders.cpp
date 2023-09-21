@@ -26,7 +26,7 @@ Folders::Folders(std::string name) {
 
 bool Folders::addNote(Note& note) {
     for (int i = 0; i < notesVector.size(); i++){
-        if (notesVector[i].getTitol() == note.getTitol()){
+        if (notesVector[i].getTitle() == note.getTitle()){
             return false; //se trova una nota con il titolo uguaele non l'aggiunge e ritorna falso
         }
     }
@@ -36,7 +36,7 @@ bool Folders::addNote(Note& note) {
 
 bool Folders::removeNote(Note& note) {
     for (auto it = notesVector.begin(); it != notesVector.end(); ++it){
-        if (it->getTitol() == note.getTitol()){
+        if (it->getTitle() == note.getTitle()){
             notesVector.erase(it); //se il titolo della nota da cancellare viene trovato allora la nota è cancellata e ritorna vero
             return true;
         }
@@ -44,10 +44,10 @@ bool Folders::removeNote(Note& note) {
     return false; //se non trova la nota ritorna falso
 }
 
-Note* Folders::findNoteWithTitol ( const std::string& titol ){ //ritorna true se ho trovato la nota con lo stesso nome, falso se non la trovo
+Note* Folders::findNoteWithTitle ( const std::string& title ){ //ritorna true se ho trovato la nota con lo stesso nome, falso se non la trovo
 
     for (auto it = notesVector.begin(); it != notesVector.end(); ++it){
-        if (it->getTitol() == titol){
+        if (it->getTitle() == title){
             return &(*it); //prendo prima l'oggetto a cui sta puntando l'iteratore e poi ritorno il suo indirizzo
         }
     }
@@ -80,9 +80,6 @@ void Folders::removeObserver(Observer *o) {
             return;
         }
     }
-
-    //se l'osservatore che si sta cercando di eliminare non esiste nella lista mando messaggio di "errore"
-    std::cout << "L'osservatore che si sta provando a disiscrivere non è presente nella lista degli Osservatori." << std::endl;
 
 }
 

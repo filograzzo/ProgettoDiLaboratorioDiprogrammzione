@@ -27,7 +27,7 @@ void FavouriteFolders::listFavourite() const {
 
     std::cout << "La lista " << this->name << " messa tra i Folder preferiti contine le note: " << std::endl;
     for ( Note it : notesVector ){
-        std::cout << " - " << it.getTitol()  << " ;" << std::endl;
+        std::cout << " - " << it.getTitle()  << " ;" << std::endl;
     }
 
 }

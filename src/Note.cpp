@@ -5,17 +5,17 @@
 #include "Note.h"
 
 Note::Note(std::string &ti, std::string &te) {
-    this->titol = ti;
+    this->title = ti;
     this->text = te;
 }
 
-const std::string &Note::getTitol() const {
-    return titol;
+const std::string &Note::getTitle() const {
+    return title;
 }
 
-bool Note::setTitol(const std::string &titol) {
+bool Note::setTitle(const std::string &title) {
     if (!this->blocked){
-        this->titol = titol;
+        this->title = title;
         return true;
     }
     else return false;

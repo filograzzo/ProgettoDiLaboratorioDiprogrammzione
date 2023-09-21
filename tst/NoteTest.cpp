@@ -1,18 +1,17 @@
-#include "gtest/gtest.h"
-#include "../src/Note.h"
+
 #include "NoteFixture.h"
 
 // SETTER E GETTER TITOLO
 
 TEST_F (NoteFixture, getNoteTitolTest){
 
-    ASSERT_EQ ( nota -> getTitol(), "Pellicano" );
+    ASSERT_EQ ( nota -> getTitle(), "Pellicano" );
 }
 
 TEST_F (NoteFixture, setNoteTitolTest){
 
-nota->setTitol("Nota su un pellicano");
-ASSERT_EQ ( nota -> getTitol(), "Nota su un pellicano" );
+nota->setTitle("Nota su un pellicano");
+ASSERT_EQ ( nota -> getTitle(), "Nota su un pellicano" );
 }
 
 // SETTER E GETTER TESTO
@@ -47,8 +46,8 @@ TEST_F(NoteFixture, blockedOnSetMethodsNoteTest){ //se blocked è true, setTitol
 
     nota->setBlocked(true);
 
-    nota->setTitol("Nota su un pellicano");
-    ASSERT_EQ ( nota -> getTitol(), "Pellicano" ); //il titolo non dovrebbe essere cambiato
+    nota->setTitle("Nota su un pellicano");
+    ASSERT_EQ ( nota -> getTitle(), "Pellicano" ); //il titolo non dovrebbe essere cambiato
 
     nota->setText("Oggi ho visto un pellicano sulla spiaggia che mangiava un pezzo di pane");
     ASSERT_EQ ( nota -> getText(), "C'era un pellicano sulla spiaggia." );

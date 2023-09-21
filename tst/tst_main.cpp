@@ -1,4 +1,4 @@
-#include <gtest/gtest.h>
+//#include <gtest/gtest.h>
 #include "FavouriteFoldersTest.cpp"
 #include "FoldersTest.cpp"
 #include "NoteTest.cpp"
