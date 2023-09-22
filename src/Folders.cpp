@@ -6,6 +6,10 @@
 #include "Folders.h"
 
 
+Folders::Folders(std::string name) {
+    this->name = name;
+}
+
 const std::string &Folders::getName() const {
     return name;
 }
@@ -19,10 +23,6 @@ int Folders::getNumberOfNotes() const {
     return this->notesVector.size();
 }
 
-
-Folders::Folders(std::string name) {
-    this->name = name;
-}
 
 bool Folders::addNote(Note& note) {
     for (int i = 0; i < notesVector.size(); i++){
@@ -96,3 +96,4 @@ void Folders::notifyObservers( ) {
     }
 
 }
+

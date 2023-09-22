@@ -26,6 +26,8 @@ public:
 
     Folders (std::string name);
 
+    virtual ~Folders() = default; //la libreria <vector> distrugge da sola gli elementi al proprio interno quando va fuori scopo
+
     const std::string &getName() const;
 
     void setName(const std::string &name);
@@ -42,7 +44,7 @@ public:
 
     //da subject
 
-    void addObserver(Observer *o) override;
+    void addObserver(Observer *o) override; //non virtual perché c'è override
     void removeObserver (Observer *o) override;
     void notifyObservers(  ) override;
 

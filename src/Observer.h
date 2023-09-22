@@ -7,5 +7,7 @@ class Observer {
 
 public:
     virtual void update( std::string name, int note )=0;
+
+    virtual ~Observer() = default;
 };
 #endif //UNIT_TESTING_ESAME_OBSERVER_H

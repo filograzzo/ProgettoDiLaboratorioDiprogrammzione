@@ -11,8 +11,26 @@ void ConcreteObserver::update(  std::string name, int note ) {
 
 void ConcreteObserver::subscribe(Subject &subject) {
     subject.addObserver(this);
+    channelsList.push_back(&subject);
 }
 
 void ConcreteObserver::unsubscribe(Subject &subject) {
     subject.removeObserver(this);
+    for ( auto it = channelsList.begin(); it != channelsList.end(); it ++){
+        if (*it == &subject){
+            channelsList.erase(it);
+        }
+    }
 }
+
+ConcreteObserver::~ConcreteObserver() {
+
+    if ( channelsList.empty() )
+        return;
+    for ( auto it = channelsList.begin(); it != channelsList.end(); it++){
+        this->unsubscribe(**it);
+    }
+    channelsList.clear(); // rimuove tutti gli elementi da channelsList
+
+}
+

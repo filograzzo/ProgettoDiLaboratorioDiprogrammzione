@@ -14,6 +14,8 @@ public:
 
     explicit FavouriteFolders(const std::string &name);
 
+    ~FavouriteFolders() override = default; //non aggiungo nulla di dinamico
+
     bool isFavourite() const;
 
     void setFavourite(bool favourite);
