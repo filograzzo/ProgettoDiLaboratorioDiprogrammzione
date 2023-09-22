@@ -35,6 +35,10 @@ bool Folders::addNote(Note& note) {
 }
 
 bool Folders::removeNote(Note& note) {
+    if ( note.isBlocked() ){
+        std::cout << "Stai cercando di cancellare una nota bloccata. Se desideri cancellarla, prima dovrai procedere a sbloccarla." << std::endl;
+        return false;
+    }
     for (auto it = notesVector.begin(); it != notesVector.end(); ++it){
         if (it->getTitle() == note.getTitle()){
             notesVector.erase(it); //se il titolo della nota da cancellare viene trovato allora la nota è cancellata e ritorna vero

@@ -7,9 +7,7 @@
 // Usare Observer per indicare quante note stanno in una collezione.
 
 /*
-Se una nota è bloccata non deve essere cancellabile nel folder
         Consentirei operazioni di modifica di note in un folder
-Un osservatore concreto deve abbonarsi/disabbonarsi (nel distruttore).
 Faccia un po’ di queste modifiche e poi fissiamo un ricevimento.
  */
 
