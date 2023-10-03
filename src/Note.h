@@ -15,7 +15,7 @@ protected:  //attributi protetti, condivisi solo con le classi derivate
 
 public:
 
-    Note ( std::string &ti, std::string &te); //costruttore, passo il titolo e il testo. La nota non è bloccata di default.
+    Note ( const std::string ti, const std::string te) ( ); //costruttore, passo il titolo e il testo. La nota non è bloccata di default.
 
     const std::string &getTitle() const; //Primo const: il valore ritornato è costante. Secondo const: non modifica lo stato dell'oggetto su cui viene chiamata
 

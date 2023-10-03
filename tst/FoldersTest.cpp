@@ -39,10 +39,10 @@ TEST_F(FoldersFixture, removeNoteFoldersTest){
     folders->addNote(nota); //già controllato sopra come operazione
     folders->removeNote(nota );
     bool found = false;
-    for ( const Note& iter : folders->getNotesVector()) {
-        if (iter.getTitle() == nota.getTitle()) {
-            found = true;
-            break;
+    for ( const Note& iter : folders->getNotesVector()) { //chiedere con il find se la nota c'è o no
+        if (iter.getTitle() == nota.getTitle()) {  //
+            found = true;  //
+            break;  //
         }
     }
 

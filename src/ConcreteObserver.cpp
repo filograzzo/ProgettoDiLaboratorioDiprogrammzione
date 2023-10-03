@@ -18,7 +18,7 @@ void ConcreteObserver::unsubscribe(Subject &subject) {
     subject.removeObserver(this);
     for ( auto it = channelsList.begin(); it != channelsList.end(); it ++){
         if (*it == &subject){
-            channelsList.erase(it);
+            channelsList.erase(it); //da trasformare in list invece che vettore
         }
     }
 }
@@ -28,9 +28,9 @@ ConcreteObserver::~ConcreteObserver() {
     if ( channelsList.empty() )
         return;
     for ( auto it = channelsList.begin(); it != channelsList.end(); it++){
-        this->unsubscribe(**it);
+        this->unsubscribe(**it); //da cambiare in subvject.unsubscribe()
     }
-    channelsList.clear(); // rimuove tutti gli elementi da channelsList
+    //channelsList.clear(); // rimuove tutti gli elementi da channelsList -> inutile
 
 }
 

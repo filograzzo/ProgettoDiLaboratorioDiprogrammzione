@@ -7,8 +7,17 @@
 // Usare Observer per indicare quante note stanno in una collezione.
 
 /*
-Consentirei operazioni di modifica di note in un folder ---------> questo si può già fare facendo foldersPointer.findNoteWithTitle ( std::string ) -> noteMethod ( bool );
-Faccia un po’ di queste modifiche e poi fissiamo un ricevimento.
+ * Fare le liste di inizializzazione per il costruttore.
+ * Passare per riferimento costante ciò che può essere passato per riferimento costante.
+ * Refactor di Folders in Folder
+ * Togliere getNotesVector (distrugge incapsulamento)
+ * In folders fare un metodo per bloccare/sbloccare una nota
+ * Togliere findNoteWithTitol
+ * Mettere la forward declaration da ConcreteObserver in Observer
+ * A subscribe e unsubscribe va passato l'indirizzo di subject
+ * CAMBIARE I VETTORI IN LISTE: PER CERCARE C'è UN METODO FIND() CHE è MOLTO PIù VELOCE DI FARE I CICLI
+ * Nel distruttore ConcreteObserver chiamare il metodo subject.removeObserver
+ * Togliere FavouriteFolders e unirlo a Folder
  */
 
 
