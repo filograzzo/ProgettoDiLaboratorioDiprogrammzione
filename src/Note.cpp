@@ -37,3 +37,11 @@ bool Note::isBlocked() const {
 void Note::setBlocked(bool blocked) {
     Note::blocked = blocked;
 }
+
+bool Note::isFavourite() const {
+    return favourite;
+}
+
+void Note::setFavourite(bool favourite) {
+    Note::favourite = favourite;
+}

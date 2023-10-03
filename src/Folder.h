@@ -19,6 +19,8 @@ private:
 protected:
     std::string name; //nome del folder
     std::list<Note> notesList; //vettore di lunghezza variabile
+    static std::list<Note> favouriteNotes; //lista di note preferite
+
 
 
 
@@ -43,6 +45,12 @@ public:
     void blockNote (const Note& note);
 
     void unlockNote ( const Note & note);
+
+    bool makeFavourite ( Note & note );
+
+    bool removeFavourite ( const Note & note );
+
+    void listFavourites () const;
 
     //da subject
 

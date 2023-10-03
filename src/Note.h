@@ -12,6 +12,7 @@ protected:  //attributi protetti, condivisi solo con le classi derivate
     std::string title; //titolo della nota
     std::string text;  //testo all'interno della nota
     bool blocked = false; //la nota può essere modificata o meno
+    bool favourite = false; //la nota può essere segnata come favourite e in caso viene messa anche in un folder speciale "favouriteList"
 
 public:
 
@@ -28,6 +29,10 @@ public:
     bool isBlocked() const;
 
     void setBlocked(bool blocked);
+
+    bool isFavourite() const;
+
+    void setFavourite(bool favourite);
 
 
 };

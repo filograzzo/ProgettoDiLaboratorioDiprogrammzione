@@ -6,14 +6,11 @@
 // una collezione specifica.
 // Usare Observer per indicare quante note stanno in una collezione.
 
-/*
- * Togliere FavouriteFolders e unirlo a Folder
- */
+
 
 
 #include <iostream>
 #include "Note.h"
-#include "Folder.h"
 
 int main() {
     std::cout << "Hello, World!" << std::endl;

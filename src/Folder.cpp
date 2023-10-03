@@ -31,6 +31,10 @@ bool Folder::addNote(const Note& note) {
     }
 
     notesList.push_back(note); // se non trova nessuno col titolo uguale, aggiunge la nota e ritorna vero
+
+    if ( note.isFavourite() )
+        favouriteNotes.push_back(note);
+
     return true;
 }
 
@@ -74,6 +78,34 @@ void Folder::unlockNote(const Note &note) {
 
 }
 
+bool Folder::makeFavourite( Note &note) {
+
+    note.setFavourite(true);
+
+    favouriteNotes.push_back(note);
+
+}
+
+bool Folder::removeFavourite(const Note &note) {
+
+    auto it = std::find( favouriteNotes.begin(), favouriteNotes.end(), note);
+
+    it->setFavourite(false);
+
+    favouriteNotes.remove(*it);
+
+}
+
+void Folder::listFavourites() const {
+
+    std::cout << "Le note messe tra i preferiti sono: \n"<< std::endl;
+
+    for (auto it = favouriteNotes.begin(); it != favouriteNotes.end(); it++)
+        std::cout << "- " << it->getTitle() << " ;\n" ;
+
+}
+
+
 
 //da subject
 
@@ -111,6 +143,8 @@ void Folder::notifyObservers( ) { //questo andrà cambiato quando cambierò obse
     }
 
 }
+
+
 
 
 
