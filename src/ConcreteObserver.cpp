@@ -2,25 +2,31 @@
 #include <iostream>
 #include "ConcreteObserver.h"
 #include "Subject.h"
+#include "Folder.h"
 
-void ConcreteObserver::update(  std::string name, int note ) {
+void ConcreteObserver::update( const Folder& folder ) {
 
-    std::cout << "È avvenuto un cambiamento nel Folder " << name << " a cui sei iscritto adesso: adesso le note presenti sono " << note << "." << std::endl;
+    std::cout << "È avvenuto un cambiamento nel Folder " <<  folder.getName() << " a cui sei iscritto adesso: adesso le note presenti sono " << folder.getSize() << "." << std::endl;
     
 }
 
-void ConcreteObserver::subscribe(Subject &subject) {
-    subject.addObserver(this);
-    channelsList.push_back(&subject);
+void ConcreteObserver::subscribe( Subject* subject) {
+
+    (*subject).addObserver(this);
+    channelsList.push_back(subject);
+
 }
 
-void ConcreteObserver::unsubscribe(Subject &subject) {
-    subject.removeObserver(this);
-    for ( auto it = channelsList.begin(); it != channelsList.end(); it ++){
-        if (*it == &subject){
-            channelsList.erase(it); //da trasformare in list invece che vettore
-        }
+void ConcreteObserver::unsubscribe(Subject* subject) {
+
+    (*subject).removeObserver(this); //rimuovo dalla lista di observer del folder l'osservatore e al contempo tolgo il soggetto dalla lista di soggetti che ho in concreteobserver
+
+    auto it = std::find(channelsList.begin(), channelsList.end(), subject);
+
+    if (it != channelsList.end()) {
+        channelsList.erase(it); // Rimuovi il soggetto dalla lista se trovato
     }
+
 }
 
 ConcreteObserver::~ConcreteObserver() {
@@ -28,9 +34,8 @@ ConcreteObserver::~ConcreteObserver() {
     if ( channelsList.empty() )
         return;
     for ( auto it = channelsList.begin(); it != channelsList.end(); it++){
-        this->unsubscribe(**it); //da cambiare in subvject.unsubscribe()
+        (*it)->removeObserver(this); //si disiscrive da ogni subject a sui era subscribed
     }
-    //channelsList.clear(); // rimuove tutti gli elementi da channelsList -> inutile
 
 }
 

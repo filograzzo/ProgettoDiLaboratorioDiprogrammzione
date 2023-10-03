@@ -38,7 +38,11 @@ public:
 
     bool removeNote (const Note& note); //rif costante
 
-   // Note* findNoteWithTitle ( const std::string& title);
+    const int &getSize() const ;
+
+    void blockNote (const Note& note);
+
+    void unlockNote ( const Note & note);
 
     //da subject
 

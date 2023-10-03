@@ -50,17 +50,30 @@ bool Folder::removeNote(const Note& note) {
 
     return true; //ritorna successo
 }
-/*
-Note* Folder::findNoteWithTitle (const std::string& title ){ //ritorna true se ho trovato la nota con lo stesso nome, falso se non la trovo
 
-    for (auto it = notesList.begin(); it != notesList.end(); ++it){
-        if (it->getTitle() == title){
-            return &(*it); //prendo prima l'oggetto a cui sta puntando l'iteratore e poi ritorno il suo indirizzo
-        }
-    }
-    return nullptr;
+
+const int& Folder::getSize() const{
+
+    return notesList.size();
+
 }
- */
+
+void Folder::blockNote(const Note &note) {
+
+    auto it = std::find ( notesList.begin(), notesList.end(), note);
+
+    (*it).setBlocked(true);
+
+}
+
+void Folder::unlockNote(const Note &note) {
+
+    auto it = std::find ( notesList.begin(), notesList.end(), note);
+
+    (*it).setBlocked(false);
+
+}
+
 
 //da subject
 
@@ -93,12 +106,13 @@ void Folder::notifyObservers( ) { //questo andrà cambiato quando cambierò obse
     if (observerList.empty())
         return;
 
-    std::string name = this->name;
-    int noteNumber = notesList.size();
-
     for (auto it = observerList.begin(); it != observerList.end(); it++){
-        (*it)->update( name, noteNumber );
+        (*it)->update( *this );
     }
 
 }
+
+
+
+
 
