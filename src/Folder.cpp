@@ -18,17 +18,19 @@ void Folder::setName(const std::string &name) {
 
 
 int Folder::getNumberOfNotes() const {
-    return this->notesVector.size();
+    return this->notesList.size();
 }
 
 
 bool Folder::addNote(const Note& note) {
-    for (int i = 0; i < notesVector.size(); i++){
-        if (notesVector[i].getTitle() == note.getTitle()){
-            return false; //se trova una nota con il titolo uguaele non l'aggiunge e ritorna falso
-        }
+
+    auto it = std::find(notesList.begin(), notesList.end(), note); //ritorna l'iteratore che punta alla nota
+
+    if (it == notesList.end()){
+        return false; //non si può aggiungere una nota già aggiunta
     }
-    notesVector.push_back(note); // se non trova nessuno col titolo uguale, aggiunge la nota e ritorna vero
+
+    notesList.push_back(note); // se non trova nessuno col titolo uguale, aggiunge la nota e ritorna vero
     return true;
 }
 
@@ -38,61 +40,61 @@ bool Folder::removeNote(const Note& note) {
         return false;
     }
 
-    for (auto it = notesVector.begin(); it != notesVector.end(); ++it){
-        if (it->getTitle() == note.getTitle()){
-            notesVector.erase(it); //se il titolo della nota da cancellare viene trovato allora la nota è cancellata e ritorna vero
-            return true;
-        }
-    }
-    return false; //se non trova la nota ritorna falso
-}
+    auto it = std::find(notesList.begin(), notesList.end(), note); //ritorna l'iteratore che punta alla nota
 
+    if (it == notesList.end()){
+        return false; //non c'è òa nota, ritorna fallimento
+    }
+
+    notesList.remove(note); //rimuove la nota
+
+    return true; //ritorna successo
+}
+/*
 Note* Folder::findNoteWithTitle (const std::string& title ){ //ritorna true se ho trovato la nota con lo stesso nome, falso se non la trovo
 
-    for (auto it = notesVector.begin(); it != notesVector.end(); ++it){
+    for (auto it = notesList.begin(); it != notesList.end(); ++it){
         if (it->getTitle() == title){
             return &(*it); //prendo prima l'oggetto a cui sta puntando l'iteratore e poi ritorno il suo indirizzo
         }
     }
     return nullptr;
 }
-
-const std::vector<Note> &Folder::getNotesVector() const {
-    return notesVector;
-}
+ */
 
 //da subject
 
 void Folder::addObserver(Observer *o) {
 
-    for (auto it = observerList.begin(); it != observerList.end(); it++){
-        if ( *it == o ){
-            std::cout << "L'osservatore che si sta provando ad aggiungere è già presente nella lista degli Osservatori." << std::endl;
-            return;
-        }
+    auto it = std::find(observerList.begin(), observerList.end(), o); //ritorna l'iteratore che punta all'observer
+
+    if (it == observerList.end()){
+        observerList.push_back(o); // se l'osservatore che sta provando ad iscriversi non è già iscritto lo iscrive
+        return;
     }
-    observerList.push_back(o); // se l'osservatore che sta provando ad iscriversi non è già iscritto lo iscrive
+
+    std::cout << "L'osservatore che si sta provando ad aggiungere è già presente nella lista degli Osservatori." << std::endl; //dice che l'osservatore è già presente
 
 }
 
 void Folder::removeObserver(Observer *o) {
 
-    for (auto it = observerList.begin(); it != observerList.end(); it++){
-        if ( *it == o ){
-            observerList.erase(it);
-            return;
-        }
+    auto it = std::find(observerList.begin(), observerList.end(), o); //ritorna l'iteratore che punta all'observer
+
+    if (*it == o){
+        observerList.remove(o); // se l'osservatore c'è lo disiscrive
+        return;
     }
 
 }
 
-void Folder::notifyObservers( ) {
+void Folder::notifyObservers( ) { //questo andrà cambiato quando cambierò observer
 
-    if ((this->observerList).empty())
+    if (observerList.empty())
         return;
 
     std::string name = this->name;
-    int noteNumber = this->notesVector.size();
+    int noteNumber = notesList.size();
 
     for (auto it = observerList.begin(); it != observerList.end(); it++){
         (*it)->update( name, noteNumber );

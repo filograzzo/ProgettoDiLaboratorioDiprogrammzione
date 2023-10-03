@@ -7,18 +7,18 @@
 
 
 #include <string>
-#include <vector>
+#include <list>
 #include "Note.h"
 #include <algorithm>
 #include "Subject.h"
 
 class Folder : public Subject{
 private:
-    std::vector<Observer*> observerList; //lista di osservatori
+    std::list<Observer*> observerList; //lista di osservatori
     
 protected:
     std::string name; //nome del folder
-    std::vector<Note> notesVector; //vettore di lunghezza variabile
+    std::list<Note> notesList; //vettore di lunghezza variabile
 
 
 
@@ -38,9 +38,7 @@ public:
 
     bool removeNote (const Note& note); //rif costante
 
-    Note* findNoteWithTitle ( const std::string& title);
-
-    //const std::vector<Note> &getNotesVector() const; //non ha senso ci sia un setter di notevector, è creato una volta sola ed è quello relativo al folder stesso
+   // Note* findNoteWithTitle ( const std::string& title);
 
     //da subject
 
