@@ -24,7 +24,7 @@ protected:
 
 public:
 
-    Folder (std::string name);
+    explicit Folder (const std::string& name): name(name){};
 
     virtual ~Folder() = default; //la libreria <vector> distrugge da sola gli elementi al proprio interno quando va fuori scopo
 
@@ -34,9 +34,9 @@ public:
 
     int getNumberOfNotes() const;
 
-    bool addNote(Note& note);
+    bool addNote(const Note& note);
 
-    bool removeNote (Note& note); //rif costante
+    bool removeNote (const Note& note); //rif costante
 
     Note* findNoteWithTitle ( const std::string& title);
 

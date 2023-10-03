@@ -6,9 +6,7 @@
 #include "Folder.h"
 
 
-Folder::Folder(std::string name) {
-    this->name = name;
-}
+
 
 const std::string &Folder::getName() const {
     return name;
@@ -24,7 +22,7 @@ int Folder::getNumberOfNotes() const {
 }
 
 
-bool Folder::addNote(Note& note) {
+bool Folder::addNote(const Note& note) {
     for (int i = 0; i < notesVector.size(); i++){
         if (notesVector[i].getTitle() == note.getTitle()){
             return false; //se trova una nota con il titolo uguaele non l'aggiunge e ritorna falso
@@ -34,11 +32,12 @@ bool Folder::addNote(Note& note) {
     return true;
 }
 
-bool Folder::removeNote(Note& note) {
+bool Folder::removeNote(const Note& note) {
     if ( note.isBlocked() ){
         std::cout << "Stai cercando di cancellare una nota bloccata. Se desideri cancellarla, prima dovrai procedere a sbloccarla." << std::endl;
         return false;
     }
+
     for (auto it = notesVector.begin(); it != notesVector.end(); ++it){
         if (it->getTitle() == note.getTitle()){
             notesVector.erase(it); //se il titolo della nota da cancellare viene trovato allora la nota è cancellata e ritorna vero
