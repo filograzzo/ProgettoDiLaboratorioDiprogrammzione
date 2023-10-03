@@ -9,7 +9,7 @@
 /*
  * Fare le liste di inizializzazione per il costruttore.
  * Passare per riferimento costante ciò che può essere passato per riferimento costante.
- * Refactor di Folders in Folder
+ * Refactor di Folder in Folder
  * Togliere getNotesVector (distrugge incapsulamento)
  * In folders fare un metodo per bloccare/sbloccare una nota
  * Togliere findNoteWithTitol
@@ -23,11 +23,11 @@
 
 #include <iostream>
 #include "Note.h"
-#include "Folders.h"
+#include "Folder.h"
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
-    Folders* folder = new Folders( "folder");
+    Folder* folder = new Folder("folder");
     folder->findNoteWithTitle("Nota1")->setBlocked(true);
     return 0;
 }

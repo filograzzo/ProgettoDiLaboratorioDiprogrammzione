@@ -1,6 +1,6 @@
 //#include <gtest/gtest.h>
 #include "FavouriteFoldersTest.cpp"
-#include "FoldersTest.cpp"
+#include "FolderTest.cpp"
 #include "NoteTest.cpp"
 
 int main(int argc, char **argv){

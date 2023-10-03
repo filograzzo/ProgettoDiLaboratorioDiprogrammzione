@@ -3,9 +3,9 @@
 #define PROGETTIDILABORATORIODIPROGRAMMAZIONE_FAVOURITEFOLDERS_H
 
 
-#include "Folders.h"
+#include "Folder.h"
 
-class FavouriteFolders: public Folders{
+class FavouriteFolders: public Folder{
 protected:
     bool favourite = false;
     static int counter;

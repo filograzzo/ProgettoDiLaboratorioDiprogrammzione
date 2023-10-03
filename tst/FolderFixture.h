@@ -1,16 +1,16 @@
 
-#ifndef UNIT_TESTING_ESAME_FOLDERSFIXTURE_H
-#define UNIT_TESTING_ESAME_FOLDERSFIXTURE_H
+#ifndef UNIT_TESTING_ESAME_FOLDERFIXTURE_H
+#define UNIT_TESTING_ESAME_FOLDERFIXTURE_H
 
 #include "gtest/gtest.h"
-#include "../src/Folders.h"
+#include "../src/Folder.h"
 #include "../src/Note.h"
 
-class FoldersFixture : public ::testing::Test {
+class FolderFixture : public ::testing::Test {
 
 protected:
 
-    Folders* folders;
+    Folder* folders;
     std::string NoteTitol = "Esempio";
     std::string ExampleText = "Testo sempio";
     Note nota =  Note ( NoteTitol, ExampleText );
@@ -22,4 +22,4 @@ public:
     void TearDown() override;
 
 };
-#endif //UNIT_TESTING_ESAME_FOLDERSFIXTURE_H
+#endif //UNIT_TESTING_ESAME_FOLDERFIXTURE_H

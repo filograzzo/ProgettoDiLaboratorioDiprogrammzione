@@ -12,7 +12,7 @@
 #include <algorithm>
 #include "Subject.h"
 
-class Folders : public Subject{
+class Folder : public Subject{
 private:
     std::vector<Observer*> observerList; //lista di osservatori
     
@@ -24,9 +24,9 @@ protected:
 
 public:
 
-    Folders (std::string name);
+    Folder (std::string name);
 
-    virtual ~Folders() = default; //la libreria <vector> distrugge da sola gli elementi al proprio interno quando va fuori scopo
+    virtual ~Folder() = default; //la libreria <vector> distrugge da sola gli elementi al proprio interno quando va fuori scopo
 
     const std::string &getName() const;
 

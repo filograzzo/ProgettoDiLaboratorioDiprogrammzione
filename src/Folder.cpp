@@ -3,28 +3,28 @@
 //
 
 #include <iostream>
-#include "Folders.h"
+#include "Folder.h"
 
 
-Folders::Folders(std::string name) {
+Folder::Folder(std::string name) {
     this->name = name;
 }
 
-const std::string &Folders::getName() const {
+const std::string &Folder::getName() const {
     return name;
 }
 
-void Folders::setName(const std::string &name) {
-    Folders::name = name;
+void Folder::setName(const std::string &name) {
+    Folder::name = name;
 }
 
 
-int Folders::getNumberOfNotes() const {
+int Folder::getNumberOfNotes() const {
     return this->notesVector.size();
 }
 
 
-bool Folders::addNote(Note& note) {
+bool Folder::addNote(Note& note) {
     for (int i = 0; i < notesVector.size(); i++){
         if (notesVector[i].getTitle() == note.getTitle()){
             return false; //se trova una nota con il titolo uguaele non l'aggiunge e ritorna falso
@@ -34,7 +34,7 @@ bool Folders::addNote(Note& note) {
     return true;
 }
 
-bool Folders::removeNote(Note& note) {
+bool Folder::removeNote(Note& note) {
     if ( note.isBlocked() ){
         std::cout << "Stai cercando di cancellare una nota bloccata. Se desideri cancellarla, prima dovrai procedere a sbloccarla." << std::endl;
         return false;
@@ -48,7 +48,7 @@ bool Folders::removeNote(Note& note) {
     return false; //se non trova la nota ritorna falso
 }
 
-Note* Folders::findNoteWithTitle ( const std::string& title ){ //ritorna true se ho trovato la nota con lo stesso nome, falso se non la trovo
+Note* Folder::findNoteWithTitle (const std::string& title ){ //ritorna true se ho trovato la nota con lo stesso nome, falso se non la trovo
 
     for (auto it = notesVector.begin(); it != notesVector.end(); ++it){
         if (it->getTitle() == title){
@@ -58,13 +58,13 @@ Note* Folders::findNoteWithTitle ( const std::string& title ){ //ritorna true se
     return nullptr;
 }
 
-const std::vector<Note> &Folders::getNotesVector() const {
+const std::vector<Note> &Folder::getNotesVector() const {
     return notesVector;
 }
 
 //da subject
 
-void Folders::addObserver(Observer *o) {
+void Folder::addObserver(Observer *o) {
 
     for (auto it = observerList.begin(); it != observerList.end(); it++){
         if ( *it == o ){
@@ -76,7 +76,7 @@ void Folders::addObserver(Observer *o) {
 
 }
 
-void Folders::removeObserver(Observer *o) {
+void Folder::removeObserver(Observer *o) {
 
     for (auto it = observerList.begin(); it != observerList.end(); it++){
         if ( *it == o ){
@@ -87,7 +87,7 @@ void Folders::removeObserver(Observer *o) {
 
 }
 
-void Folders::notifyObservers( ) {
+void Folder::notifyObservers( ) {
 
     if ((this->observerList).empty())
         return;

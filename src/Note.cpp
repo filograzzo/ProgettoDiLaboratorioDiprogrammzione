@@ -4,10 +4,6 @@
 
 #include "Note.h"
 
-Note::Note(std::string &ti, std::string &te) {
-    this->title = ti;
-    this->text = te;
-}
 
 const std::string &Note::getTitle() const {
     return title;

@@ -2,7 +2,7 @@
 #include <iostream>
 #include "FavouriteFolders.h"
 
-FavouriteFolders::FavouriteFolders(const std::string &name) : Folders(name) {}
+FavouriteFolders::FavouriteFolders(const std::string &name) : Folder(name) {}
 
 bool FavouriteFolders::isFavourite() const {
     return favourite;
