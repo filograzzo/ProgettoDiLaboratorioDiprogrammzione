@@ -1,0 +1,2 @@
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\ar.exe qc lib_lib.a CMakeFiles/_lib.dir/ConcreteObserver.cpp.obj CMakeFiles/_lib.dir/Folder.cpp.obj CMakeFiles/_lib.dir/Note.cpp.obj "CMakeFiles/_lib.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj" CMakeFiles/_lib.dir/main.cpp.obj
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\ranlib.exe lib_lib.a
