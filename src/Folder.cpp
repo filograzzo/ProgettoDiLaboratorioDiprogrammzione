@@ -26,7 +26,7 @@ bool Folder::addNote(const Note& note) {
 
     auto it = std::find(notesList.begin(), notesList.end(), note); //ritorna l'iteratore che punta alla nota
 
-    if (it == notesList.end()){
+    if (it != notesList.end()){ //se l'iteratore è diverso dalla fine vuol dire che ha trovato la nota già dentro
         return false; //non si può aggiungere una nota già aggiunta
     }
 
@@ -47,7 +47,7 @@ bool Folder::removeNote(const Note& note) {
     auto it = std::find(notesList.begin(), notesList.end(), note); //ritorna l'iteratore che punta alla nota
 
     if (it == notesList.end()){
-        return false; //non c'è òa nota, ritorna fallimento
+        return false; //non c'è la nota, ritorna fallimento
     }
 
     notesList.remove(note); //rimuove la nota
@@ -138,9 +138,8 @@ void Folder::notifyObservers( ) { //questo andrà cambiato quando cambierò obse
     if (observerList.empty())
         return;
 
-    for (auto it = observerList.begin(); it != observerList.end(); it++){
-        (*it)->update( *this );
-    }
+    for (auto & it : observerList)
+        it->update( *this );
 
 }
 
