@@ -34,6 +34,8 @@ public:
 
     void setFavourite(bool favourite);
 
+    bool operator==(const Note& other) const;
+
 
 };
 
