@@ -96,13 +96,12 @@ bool Folder::removeFavourite(const Note &note) {
 
 }
 
-void Folder::listFavourites() const {
-
-    std::cout << "Le note messe tra i preferiti sono: \n"<< std::endl;
-
-    for (auto it = favouriteNotes.begin(); it != favouriteNotes.end(); it++)
-        std::cout << "- " << it->getTitle() << " ;\n" ;
-
+std::list <std::string> Folder::listFavourites() const  {
+    std::list <std::string> titlesList;
+    for (const auto &it :favouriteNotes){
+        titlesList.push_back(it.getTitle());
+    }
+    return titlesList;
 }
 
 
@@ -133,7 +132,7 @@ void Folder::removeObserver(Observer *o) {
 
 }
 
-void Folder::notifyObservers( ) { //questo andrà cambiato quando cambierò observer
+void Folder::notifyObservers( ) {
 
     if (observerList.empty())
         return;
@@ -141,6 +140,15 @@ void Folder::notifyObservers( ) { //questo andrà cambiato quando cambierò obse
     for (auto & it : observerList)
         it->update( *this );
 
+}
+
+bool Folder::getNoteFromTitle(const std::string &title, Note &nota) const {
+    for (const auto &it : notesList)
+        if (it.getTitle() == title) {
+            nota = it;
+            return true;
+        }
+    return false;
 }
 
 

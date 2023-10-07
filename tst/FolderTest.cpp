@@ -23,7 +23,7 @@ TEST_F (FolderFixture, addNoteAndRemoveNoteFoldersTest ){
 
     folders->addNote(nota );
     bool found = false;
-    for ( const Note& iter : folders->getNotesVector()){
+    for ( const Note& iter : folders->getNotsVector()){ //cambiare tutto
         if ( iter.getTitle() == nota.getTitle() ){
             found = true;
             break;
@@ -45,7 +45,8 @@ TEST_F(FolderFixture, removeNoteFoldersTest){
             break;  //
         }
     }
-
+    //test cancellazione nota bloccata
+//edit nota bloccata
     ASSERT_EQ ( found, false );
 
 }
