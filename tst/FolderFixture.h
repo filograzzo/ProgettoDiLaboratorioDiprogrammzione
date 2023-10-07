@@ -9,16 +9,13 @@
 class FolderFixture : public ::testing::Test {
 
 protected:
-
-    Folder* folders;
+    Folder* folder;
     std::string NoteTitol = "Esempio";
     std::string ExampleText = "Testo sempio";
     Note nota =  Note ( NoteTitol, ExampleText );
 
 public:
-
     void SetUp() override;
-
     void TearDown() override;
 
 };

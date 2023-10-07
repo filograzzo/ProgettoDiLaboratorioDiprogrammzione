@@ -16,12 +16,6 @@ void Folder::setName(const std::string &name) {
     Folder::name = name;
 }
 
-
-int Folder::getNumberOfNotes() const {
-    return this->notesList.size();
-}
-
-
 bool Folder::addNote(const Note& note) {
 
     auto it = std::find(notesList.begin(), notesList.end(), note); //ritorna l'iteratore che punta alla nota
@@ -65,7 +59,6 @@ const int& Folder::getSize() const{
 void Folder::blockNote(const Note &note) {
 
     auto it = std::find ( notesList.begin(), notesList.end(), note);
-
     (*it).setBlocked(true);
 
 }
@@ -80,20 +73,23 @@ void Folder::unlockNote(const Note &note) {
 
 bool Folder::makeFavourite( Note &note) {
 
-    note.setFavourite(true);
-
-    favouriteNotes.push_back(note);
-
+    if(!note.isBlocked()){
+        note.setFavourite(true);
+        favouriteNotes.push_back(note);
+        return true;
+    }
+return false;
 }
 
 bool Folder::removeFavourite(const Note &note) {
 
-    auto it = std::find( favouriteNotes.begin(), favouriteNotes.end(), note);
-
-    it->setFavourite(false);
-
-    favouriteNotes.remove(*it);
-
+    if (!note.isBlocked()){
+        auto it = std::find( favouriteNotes.begin(), favouriteNotes.end(), note);
+        it->setFavourite(false);
+        favouriteNotes.remove(*it);
+        return true;
+    }
+    return false;
 }
 
 std::list <std::string> Folder::listFavourites() const  {
@@ -142,6 +138,7 @@ void Folder::notifyObservers( ) {
 
 }
 
+//fatto in questo modo perché è semlie da testare e perché in caso di fallimento non c'è ua nota particolare da ritornare
 bool Folder::getNoteFromTitle(const std::string &title, Note &nota) const {
     for (const auto &it : notesList)
         if (it.getTitle() == title) {

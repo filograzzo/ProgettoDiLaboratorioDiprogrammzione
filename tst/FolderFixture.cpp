@@ -1,18 +1,13 @@
 #include "FolderFixture.h"
 
-
 void FolderFixture::SetUp()  {
-
     std::string name = "Raccolta di note sui gabbiani";
-    folders = new Folder (name );
-
+    folder = new Folder (name );
 }
 
 void FolderFixture::TearDown()  {
-
-    delete folders;
-    folders = nullptr;
-
+    delete folder;
+    folder = nullptr;
 }
 
 

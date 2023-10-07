@@ -26,7 +26,6 @@ public:
     virtual ~Folder() = default; //la libreria <list> distrugge da sola gli elementi al proprio interno quando va fuori scopo
     const std::string &getName() const;
     void setName(const std::string &name);
-    int getNumberOfNotes() const;
     bool addNote(const Note& note);
     bool removeNote (const Note& note);
     const int &getSize() const ;
@@ -34,7 +33,7 @@ public:
     void unlockNote ( const Note & note);
     bool makeFavourite ( Note & note );
     bool removeFavourite ( const Note & note );
-    std::list <std::string>  listFavourites () const;
+    std::list <std::string> listFavourites () const;
     bool getNoteFromTitle (const std::string &title, Note &nota) const;
 
     //da subject
