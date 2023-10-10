@@ -14,7 +14,7 @@ bool Note::setTitle(const std::string &title) {
         this->title = title;
         return true;
     }
-    else return false;
+    return false;
 }
 
 
@@ -27,7 +27,7 @@ bool Note::setText(const std::string &text) {
         this->text = text;
         return true;
     }
-    else return false;
+    return false;
 }
 
 bool Note::isBlocked() const {
@@ -35,7 +35,7 @@ bool Note::isBlocked() const {
 }
 
 void Note::setBlocked(bool blocked) {
-    Note::blocked = blocked;
+    this->blocked = blocked;
 }
 
 bool Note::isFavourite() const {
@@ -43,5 +43,11 @@ bool Note::isFavourite() const {
 }
 
 void Note::setFavourite(bool favourite) {
-    Note::favourite = favourite;
+    this->favourite = favourite;
+}
+
+bool Note::operator==(const Note &other) const {
+    if ( this->title == other.title && this->text == other.text )
+        return true;
+    return false;
 }

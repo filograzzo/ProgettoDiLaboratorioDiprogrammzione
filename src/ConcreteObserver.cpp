@@ -19,7 +19,8 @@ void ConcreteObserver::subscribe( Subject* subject) {
 
 void ConcreteObserver::unsubscribe(Subject* subject) {
 
-    (*subject).removeObserver(this); //rimuovo dalla lista di observer del folder l'osservatore e al contempo tolgo il soggetto dalla lista di soggetti che ho in concreteobserver
+    (*subject).removeObserver(this); //rimuovo dalla lista di observer del folder l'osservatore e al contempo tolgo il soggetto dalla lista di soggetti
+    // che ho in concreteobserver
 
     auto it = std::find(channelsList.begin(), channelsList.end(), subject);
 

@@ -19,7 +19,7 @@ public:
 
     ~ConcreteObserver() override; //se il ConcreteObject è iscritto a qualche cnale lo disiscrive, altrimenti non fa nulla
 
-    virtual void update ( const Folder& folder ) override; //dico quante note sono presenti all'interno del folder
+    void update ( const Folder& folder ) override; //dico quante note sono presenti all'interno del folder
     virtual void subscribe( Subject* subject);
     virtual void unsubscribe(Subject* subject);
 };

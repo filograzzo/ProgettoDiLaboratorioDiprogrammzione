@@ -16,17 +16,11 @@ void Folder::setName(const std::string &name) {
     Folder::name = name;
 }
 
-
-int Folder::getNumberOfNotes() const {
-    return this->notesList.size();
-}
-
-
 bool Folder::addNote(const Note& note) {
 
     auto it = std::find(notesList.begin(), notesList.end(), note); //ritorna l'iteratore che punta alla nota
 
-    if (it == notesList.end()){
+    if (it != notesList.end()){ //se l'iteratore è diverso dalla fine vuol dire che ha trovato la nota già dentro
         return false; //non si può aggiungere una nota già aggiunta
     }
 
@@ -47,7 +41,7 @@ bool Folder::removeNote(const Note& note) {
     auto it = std::find(notesList.begin(), notesList.end(), note); //ritorna l'iteratore che punta alla nota
 
     if (it == notesList.end()){
-        return false; //non c'è òa nota, ritorna fallimento
+        return false; //non c'è la nota, ritorna fallimento
     }
 
     notesList.remove(note); //rimuove la nota
@@ -65,7 +59,6 @@ const int& Folder::getSize() const{
 void Folder::blockNote(const Note &note) {
 
     auto it = std::find ( notesList.begin(), notesList.end(), note);
-
     (*it).setBlocked(true);
 
 }
@@ -80,29 +73,31 @@ void Folder::unlockNote(const Note &note) {
 
 bool Folder::makeFavourite( Note &note) {
 
-    note.setFavourite(true);
-
-    favouriteNotes.push_back(note);
-
+    if(!note.isBlocked()){
+        note.setFavourite(true);
+        favouriteNotes.push_back(note);
+        return true;
+    }
+return false;
 }
 
 bool Folder::removeFavourite(const Note &note) {
 
-    auto it = std::find( favouriteNotes.begin(), favouriteNotes.end(), note);
-
-    it->setFavourite(false);
-
-    favouriteNotes.remove(*it);
-
+    if (!note.isBlocked()){
+        auto it = std::find( favouriteNotes.begin(), favouriteNotes.end(), note);
+        it->setFavourite(false);
+        favouriteNotes.remove(*it);
+        return true;
+    }
+    return false;
 }
 
-void Folder::listFavourites() const {
-
-    std::cout << "Le note messe tra i preferiti sono: \n"<< std::endl;
-
-    for (auto it = favouriteNotes.begin(); it != favouriteNotes.end(); it++)
-        std::cout << "- " << it->getTitle() << " ;\n" ;
-
+std::list <std::string> Folder::listFavourites() const  {
+    std::list <std::string> titlesList;
+    for (const auto &it :favouriteNotes){
+        titlesList.push_back(it.getTitle());
+    }
+    return titlesList;
 }
 
 
@@ -133,15 +128,24 @@ void Folder::removeObserver(Observer *o) {
 
 }
 
-void Folder::notifyObservers( ) { //questo andrà cambiato quando cambierò observer
+void Folder::notifyObservers( ) {
 
     if (observerList.empty())
         return;
 
-    for (auto it = observerList.begin(); it != observerList.end(); it++){
-        (*it)->update( *this );
-    }
+    for (auto & it : observerList)
+        it->update( *this );
 
+}
+
+//fatto in questo modo perché è semlie da testare e perché in caso di fallimento non c'è ua nota particolare da ritornare
+bool Folder::getNoteFromTitle(const std::string &title, Note &nota) const {
+    for (const auto &it : notesList)
+        if (it.getTitle() == title) {
+            nota = it;
+            return true;
+        }
+    return false;
 }
 
 

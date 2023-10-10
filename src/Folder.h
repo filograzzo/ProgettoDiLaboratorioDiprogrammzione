@@ -18,43 +18,26 @@ private:
     
 protected:
     std::string name; //nome del folder
-    std::list<Note> notesList; //vettore di lunghezza variabile
+    std::list<Note> notesList; //lista di lunghezza variabile
     static std::list<Note> favouriteNotes; //lista di note preferite
 
-
-
-
 public:
-
     explicit Folder (const std::string& name): name(name){};
-
-    virtual ~Folder() = default; //la libreria <vector> distrugge da sola gli elementi al proprio interno quando va fuori scopo
-
+    virtual ~Folder() = default; //la libreria <list> distrugge da sola gli elementi al proprio interno quando va fuori scopo
     const std::string &getName() const;
-
     void setName(const std::string &name);
-
-    int getNumberOfNotes() const;
-
     bool addNote(const Note& note);
-
-    bool removeNote (const Note& note); //rif costante
-
+    bool removeNote (const Note& note);
     const int &getSize() const ;
-
     void blockNote (const Note& note);
-
     void unlockNote ( const Note & note);
-
     bool makeFavourite ( Note & note );
-
     bool removeFavourite ( const Note & note );
-
-    void listFavourites () const;
+    std::list <std::string> listFavourites () const;
+    bool getNoteFromTitle (const std::string &title, Note &nota) const;
 
     //da subject
-
-    void addObserver(Observer *o) override; //non virtual perché c'è override
+    void addObserver(Observer *o) override;
     void removeObserver (Observer *o) override;
     void notifyObservers(  ) override;
 
