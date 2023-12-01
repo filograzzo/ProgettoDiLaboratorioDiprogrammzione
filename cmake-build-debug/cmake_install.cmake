@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master
+# Install script for directory: C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Unit_Testing_Esame")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/ProgettoDiLaboratorioDiProgammazione")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,22 +34,22 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2023.2.1/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/cmake-build-debug/lib/cmake_install.cmake")
+  include("C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/cmake-build-debug/lib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/cmake-build-debug/src/cmake_install.cmake")
+  include("C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/cmake-build-debug/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/cmake-build-debug/tst/cmake_install.cmake")
+  include("C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/cmake-build-debug/tst/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -60,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

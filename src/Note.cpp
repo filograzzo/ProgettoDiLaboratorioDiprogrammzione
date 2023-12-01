@@ -4,7 +4,6 @@
 
 #include "Note.h"
 
-
 const std::string &Note::getTitle() const {
     return title;
 }
@@ -16,7 +15,6 @@ bool Note::setTitle(const std::string &title) {
     }
     return false;
 }
-
 
 const std::string &Note::getText() const {
     return text;

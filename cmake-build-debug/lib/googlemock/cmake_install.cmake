@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/lib/googlemock
+# Install script for directory: C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googlemock
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Unit_Testing_Esame")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/ProgettoDiLaboratorioDiProgammazione")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,32 +34,32 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2023.2.1/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/objdump.exe")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "gmock" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/lib/googlemock/include/")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xgmockx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/lib/googlemock/include/")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "gmock" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/cmake-build-debug/lib/libgmock.a")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xgmockx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/cmake-build-debug/lib/libgmock.a")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "gmock" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/cmake-build-debug/lib/libgmock_main.a")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xgmockx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/cmake-build-debug/lib/libgmock_main.a")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "gmock" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/cmake-build-debug/lib/googletest/generated/gmock.pc")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xgmockx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/cmake-build-debug/lib/googletest/generated/gmock.pc")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "gmock" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/cmake-build-debug/lib/googletest/generated/gmock_main.pc")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xgmockx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/cmake-build-debug/lib/googletest/generated/gmock_main.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/cmake-build-debug/lib/googletest/cmake_install.cmake")
+  include("C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiProgrammazione/cmake-build-debug/lib/googletest/cmake_install.cmake")
 
 endif()
 
