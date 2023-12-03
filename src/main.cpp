@@ -6,9 +6,6 @@
 // una collezione specifica.
 // Usare Observer per indicare quante note stanno in una collezione.
 
-
-
-
 #include <iostream>
 #include "Note.h"
 
@@ -16,4 +13,3 @@ int main() {
     std::cout << "Hello, World!" << std::endl;
     return 0;
 }
-

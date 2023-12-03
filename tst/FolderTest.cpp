@@ -22,10 +22,10 @@ TEST_F (FolderFixture, setFoldersTitleTest ){
 TEST_F (FolderFixture, getNoteWithTitleFolderTest ){ //ho già testato add e remove
 
     folder->addNote(nota );
-    ASSERT_EQ(folder->getNoteFromTitle(nota.getTitle(), nota), true); //il titolo della nota aggiunta è uguale ad esempio
+    ASSERT_TRUE(folder->getNoteFromTitle(nota.getTitle(), nota)); //il titolo della nota aggiunta è uguale ad esempio
 
     folder->removeNote(nota );
-    ASSERT_EQ (folder->getNoteFromTitle(nota.getTitle(), nota) , false );
+    ASSERT_FALSE(folder->getNoteFromTitle(nota.getTitle(), nota));
 
 }
 
@@ -34,25 +34,27 @@ TEST_F (FolderFixture, getNoteWithTitleFolderTest ){ //ho già testato add e rem
 TEST_F (FolderFixture, addNoteFolderTest ){
 
     folder->addNote(nota );
-    bool found = false;
-    found = folder->getNoteFromTitle( nota.getTitle(), nota);
-    ASSERT_EQ( found, true );
+    Note newNote = Note("", "");
+    ASSERT_TRUE(folder->getNoteFromTitle(nota.getTitle(), newNote));
+
 }
 
 TEST_F(FolderFixture, removeNoteFolderTest){
 
     folder->addNote(nota); //già controllato sopra come operazione
+    ASSERT_EQ ( folder->getSize(), 1);
     folder->removeNote(nota );
-    bool found = false;
-    found = folder->getNoteFromTitle( nota.getTitle(), nota);
-    ASSERT_EQ (found, false);
+    ASSERT_EQ ( folder->getSize(), 0);
+    ASSERT_FALSE( folder->getNoteFromTitle( nota.getTitle(), nota));
+    ASSERT_FALSE(folder->removeNote(nota ));
+    ASSERT_EQ ( folder->getSize(), 0);
 
-    //test cancellazione nota bloccata
+    //test cancellazione nota bloccata, ASSERT TRUE, controllare se il numero delle note sia cambiato
     folder->addNote(nota);
     nota.setBlocked(true);
     folder->removeNote(nota);
-    found = folder->getNoteFromTitle( nota.getTitle(), nota);
-    ASSERT_EQ(found, true);
+    ASSERT_TRUE( folder->getNoteFromTitle( nota.getTitle(), nota));
+    ASSERT_EQ ( folder->getSize(), 1);
 }
 
 // GET NUMBER OF NOTES
@@ -75,32 +77,29 @@ TEST_F (FolderFixture, getNumberOfNotesFolderTest ){
 
 }
 
-
 //TEST SU MAKE E REMOVE FAVOURITE
 
 TEST_F (FolderFixture, makeAndRemoveFavouriteFolderTest){
     folder->addNote(nota);
-
-    bool done = folder->makeFavourite(nota);
-    ASSERT_EQ (done , true);
-
-    done =folder->removeFavourite(nota);
-    ASSERT_EQ (done, true);
+    ASSERT_TRUE( folder->makeFavourite(nota));
+    ASSERT_EQ (folder->getFavouriteSize(), 1);
+    ASSERT_TRUE(folder->removeFavourite(nota));
+    ASSERT_EQ (folder->getFavouriteSize(), 0);
 }
-
 
 //EDIT DI NOTE DA BLOCCATE
 
 TEST_F(FolderFixture, blockedFolderTest){
     folder->addNote(nota);
-
     folder->blockNote(nota);
-    bool done = folder->makeFavourite(nota);
-    ASSERT_EQ(done, false);
+    ASSERT_FALSE(folder->makeFavourite(nota));
+    ASSERT_EQ(folder->getFavouriteSize(), 0);
 
     folder->unlockNote(nota);
     folder->makeFavourite(nota);
+    ASSERT_EQ(folder->getFavouriteSize(), 1);
     nota.setBlocked(true);
-    done=folder->removeFavourite(nota);
-    ASSERT_EQ(done, false);
+    ASSERT_FALSE(folder->removeFavourite(nota));
+    ASSERT_EQ(folder->getFavouriteSize(), 1);
+
 }

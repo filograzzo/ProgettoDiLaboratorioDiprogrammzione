@@ -160,7 +160,7 @@ CMAKE_INSTALL_MANDIR:PATH=
 CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/Unit_Testing_Esame
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/ProgettoDiLaboratorioDiProgammazione
 
 //Run-time variable data (LOCALSTATEDIR/run)
 CMAKE_INSTALL_RUNSTATEDIR:PATH=
@@ -216,7 +216,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Unit_Testing_Esame
+CMAKE_PROJECT_NAME:STATIC=ProgettoDiLaboratorioDiProgammazione
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.14.0
@@ -322,13 +322,13 @@ GTEST_HAS_ABSL:BOOL=OFF
 INSTALL_GTEST:BOOL=ON
 
 //Value Computed by CMake
-Unit_Testing_Esame_BINARY_DIR:STATIC=C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/cmake-build-debug
+ProgettoDiLaboratorioDiProgammazione_BINARY_DIR:STATIC=C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/cmake-build-debug
 
 //Value Computed by CMake
-Unit_Testing_Esame_IS_TOP_LEVEL:STATIC=ON
+ProgettoDiLaboratorioDiProgammazione_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-Unit_Testing_Esame_SOURCE_DIR:STATIC=C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master
+ProgettoDiLaboratorioDiProgammazione_SOURCE_DIR:STATIC=C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/cmake-build-debug/lib/googlemock
@@ -573,16 +573,21 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_STRIP-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Python3
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[C:/Users/Filippo/AppData/Local/Programs/Python/Python310/python.exe][cfound components: Interpreter ][v3.10.4()]
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 //CMAKE_INSTALL_PREFIX during last run
-_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/Unit_Testing_Esame
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/ProgettoDiLaboratorioDiProgammazione
 //Compiler reason failure
 _Python3_Compiler_REASON_FAILURE:INTERNAL=
 //Development reason failure
 _Python3_Development_REASON_FAILURE:INTERNAL=
 //Path to a program.
-_Python3_EXECUTABLE:INTERNAL=_Python3_EXECUTABLE-NOTFOUND
+_Python3_EXECUTABLE:INTERNAL=C:/Users/Filippo/AppData/Local/Programs/Python/Python310/python.exe
+//Python3 Properties
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;10;4;64;;cp310-win_amd64;;C:\Users\Filippo\AppData\Local\Programs\Python\Python310\Lib;C:\Users\Filippo\AppData\Local\Programs\Python\Python310\Lib;C:\Users\Filippo\AppData\Local\Programs\Python\Python310\Lib\site-packages;C:\Users\Filippo\AppData\Local\Programs\Python\Python310\Lib\site-packages
+_Python3_INTERPRETER_SIGNATURE:INTERNAL=3ee64b2656b14ad427f1eccacd5806b9
 //Interpreter reason failure
 _Python3_Interpreter_REASON_FAILURE:INTERNAL=
 //NumPy reason failure
