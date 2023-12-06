@@ -95,7 +95,7 @@ TEST_F(FolderFixture, blockedFolderTest){
     ASSERT_FALSE(folder->makeFavourite(nota));
     ASSERT_EQ(folder->getFavouriteSize(), 0);
 
-    nota.setBlocked(true);
+    nota.setBlocked(false);
     folder->makeFavourite(nota);
     ASSERT_EQ(folder->getFavouriteSize(), 1);
     nota.setBlocked(true);
