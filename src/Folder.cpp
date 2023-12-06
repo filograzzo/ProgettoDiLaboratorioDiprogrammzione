@@ -70,12 +70,18 @@ void Folder::unlockNote(const Note &note) {
 
 bool Folder::makeFavourite(Note &note) {
 
-    if (!note.isBlocked()) {
+    bool done = note.setFavourite(true);
+    if(done){
+        favouriteNotes.push_back(note);
+    }
+    return done;
+
+    /*if (!note.isBlocked()) {
         note.setFavourite(true);
         favouriteNotes.push_back(note);
         return true;
     }
-    return false;
+    return false;*/
 }
 
 bool Folder::removeFavourite(const Note &note) {

@@ -91,11 +91,11 @@ TEST_F (FolderFixture, makeAndRemoveFavouriteFolderTest){
 
 TEST_F(FolderFixture, blockedFolderTest){
     folder->addNote(nota);
-    folder->blockNote(nota);
+    nota.setBlocked(true);
     ASSERT_FALSE(folder->makeFavourite(nota));
     ASSERT_EQ(folder->getFavouriteSize(), 0);
 
-    folder->unlockNote(nota);
+    nota.setBlocked(true);
     folder->makeFavourite(nota);
     ASSERT_EQ(folder->getFavouriteSize(), 1);
     nota.setBlocked(true);

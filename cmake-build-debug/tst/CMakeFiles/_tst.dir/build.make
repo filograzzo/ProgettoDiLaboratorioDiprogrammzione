@@ -83,26 +83,11 @@ tst/CMakeFiles/_tst.dir/FolderFixture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_tst.dir/FolderFixture.cpp.s"
 	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\tst && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\tst\FolderFixture.cpp -o CMakeFiles\_tst.dir\FolderFixture.cpp.s
 
-tst/CMakeFiles/_tst.dir/FolderTest.cpp.obj: tst/CMakeFiles/_tst.dir/flags.make
-tst/CMakeFiles/_tst.dir/FolderTest.cpp.obj: tst/CMakeFiles/_tst.dir/includes_CXX.rsp
-tst/CMakeFiles/_tst.dir/FolderTest.cpp.obj: C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/tst/FolderTest.cpp
-tst/CMakeFiles/_tst.dir/FolderTest.cpp.obj: tst/CMakeFiles/_tst.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tst/CMakeFiles/_tst.dir/FolderTest.cpp.obj"
-	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\tst && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tst/CMakeFiles/_tst.dir/FolderTest.cpp.obj -MF CMakeFiles\_tst.dir\FolderTest.cpp.obj.d -o CMakeFiles\_tst.dir\FolderTest.cpp.obj -c C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\tst\FolderTest.cpp
-
-tst/CMakeFiles/_tst.dir/FolderTest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_tst.dir/FolderTest.cpp.i"
-	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\tst && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\tst\FolderTest.cpp > CMakeFiles\_tst.dir\FolderTest.cpp.i
-
-tst/CMakeFiles/_tst.dir/FolderTest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_tst.dir/FolderTest.cpp.s"
-	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\tst && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\tst\FolderTest.cpp -o CMakeFiles\_tst.dir\FolderTest.cpp.s
-
 tst/CMakeFiles/_tst.dir/NoteFixture.cpp.obj: tst/CMakeFiles/_tst.dir/flags.make
 tst/CMakeFiles/_tst.dir/NoteFixture.cpp.obj: tst/CMakeFiles/_tst.dir/includes_CXX.rsp
 tst/CMakeFiles/_tst.dir/NoteFixture.cpp.obj: C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/tst/NoteFixture.cpp
 tst/CMakeFiles/_tst.dir/NoteFixture.cpp.obj: tst/CMakeFiles/_tst.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tst/CMakeFiles/_tst.dir/NoteFixture.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tst/CMakeFiles/_tst.dir/NoteFixture.cpp.obj"
 	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\tst && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tst/CMakeFiles/_tst.dir/NoteFixture.cpp.obj -MF CMakeFiles\_tst.dir\NoteFixture.cpp.obj.d -o CMakeFiles\_tst.dir\NoteFixture.cpp.obj -c C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\tst\NoteFixture.cpp
 
 tst/CMakeFiles/_tst.dir/NoteFixture.cpp.i: cmake_force
@@ -112,6 +97,21 @@ tst/CMakeFiles/_tst.dir/NoteFixture.cpp.i: cmake_force
 tst/CMakeFiles/_tst.dir/NoteFixture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_tst.dir/NoteFixture.cpp.s"
 	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\tst && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\tst\NoteFixture.cpp -o CMakeFiles\_tst.dir\NoteFixture.cpp.s
+
+tst/CMakeFiles/_tst.dir/FolderTest.cpp.obj: tst/CMakeFiles/_tst.dir/flags.make
+tst/CMakeFiles/_tst.dir/FolderTest.cpp.obj: tst/CMakeFiles/_tst.dir/includes_CXX.rsp
+tst/CMakeFiles/_tst.dir/FolderTest.cpp.obj: C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/tst/FolderTest.cpp
+tst/CMakeFiles/_tst.dir/FolderTest.cpp.obj: tst/CMakeFiles/_tst.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tst/CMakeFiles/_tst.dir/FolderTest.cpp.obj"
+	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\tst && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tst/CMakeFiles/_tst.dir/FolderTest.cpp.obj -MF CMakeFiles\_tst.dir\FolderTest.cpp.obj.d -o CMakeFiles\_tst.dir\FolderTest.cpp.obj -c C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\tst\FolderTest.cpp
+
+tst/CMakeFiles/_tst.dir/FolderTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_tst.dir/FolderTest.cpp.i"
+	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\tst && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\tst\FolderTest.cpp > CMakeFiles\_tst.dir\FolderTest.cpp.i
+
+tst/CMakeFiles/_tst.dir/FolderTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_tst.dir/FolderTest.cpp.s"
+	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\tst && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\tst\FolderTest.cpp -o CMakeFiles\_tst.dir\FolderTest.cpp.s
 
 tst/CMakeFiles/_tst.dir/NoteTest.cpp.obj: tst/CMakeFiles/_tst.dir/flags.make
 tst/CMakeFiles/_tst.dir/NoteTest.cpp.obj: tst/CMakeFiles/_tst.dir/includes_CXX.rsp
@@ -146,8 +146,8 @@ tst/CMakeFiles/_tst.dir/tst_main.cpp.s: cmake_force
 # Object files for target _tst
 _tst_OBJECTS = \
 "CMakeFiles/_tst.dir/FolderFixture.cpp.obj" \
-"CMakeFiles/_tst.dir/FolderTest.cpp.obj" \
 "CMakeFiles/_tst.dir/NoteFixture.cpp.obj" \
+"CMakeFiles/_tst.dir/FolderTest.cpp.obj" \
 "CMakeFiles/_tst.dir/NoteTest.cpp.obj" \
 "CMakeFiles/_tst.dir/tst_main.cpp.obj"
 
@@ -155,8 +155,8 @@ _tst_OBJECTS = \
 _tst_EXTERNAL_OBJECTS =
 
 tst/_tst.exe: tst/CMakeFiles/_tst.dir/FolderFixture.cpp.obj
-tst/_tst.exe: tst/CMakeFiles/_tst.dir/FolderTest.cpp.obj
 tst/_tst.exe: tst/CMakeFiles/_tst.dir/NoteFixture.cpp.obj
+tst/_tst.exe: tst/CMakeFiles/_tst.dir/FolderTest.cpp.obj
 tst/_tst.exe: tst/CMakeFiles/_tst.dir/NoteTest.cpp.obj
 tst/_tst.exe: tst/CMakeFiles/_tst.dir/tst_main.cpp.obj
 tst/_tst.exe: tst/CMakeFiles/_tst.dir/build.make

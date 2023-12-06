@@ -68,10 +68,24 @@ include src/CMakeFiles/_run.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/_run.dir/flags.make
 
+src/CMakeFiles/_run.dir/main.cpp.obj: src/CMakeFiles/_run.dir/flags.make
+src/CMakeFiles/_run.dir/main.cpp.obj: C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/src/main.cpp
+src/CMakeFiles/_run.dir/main.cpp.obj: src/CMakeFiles/_run.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/_run.dir/main.cpp.obj"
+	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\src && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/_run.dir/main.cpp.obj -MF CMakeFiles\_run.dir\main.cpp.obj.d -o CMakeFiles\_run.dir\main.cpp.obj -c C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\src\main.cpp
+
+src/CMakeFiles/_run.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_run.dir/main.cpp.i"
+	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\src && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\src\main.cpp > CMakeFiles\_run.dir\main.cpp.i
+
+src/CMakeFiles/_run.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_run.dir/main.cpp.s"
+	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\src && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\src\main.cpp -o CMakeFiles\_run.dir\main.cpp.s
+
 src/CMakeFiles/_run.dir/ConcreteObserver.cpp.obj: src/CMakeFiles/_run.dir/flags.make
 src/CMakeFiles/_run.dir/ConcreteObserver.cpp.obj: C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/src/ConcreteObserver.cpp
 src/CMakeFiles/_run.dir/ConcreteObserver.cpp.obj: src/CMakeFiles/_run.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/_run.dir/ConcreteObserver.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/_run.dir/ConcreteObserver.cpp.obj"
 	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\src && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/_run.dir/ConcreteObserver.cpp.obj -MF CMakeFiles\_run.dir\ConcreteObserver.cpp.obj.d -o CMakeFiles\_run.dir\ConcreteObserver.cpp.obj -c C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\src\ConcreteObserver.cpp
 
 src/CMakeFiles/_run.dir/ConcreteObserver.cpp.i: cmake_force
@@ -85,7 +99,7 @@ src/CMakeFiles/_run.dir/ConcreteObserver.cpp.s: cmake_force
 src/CMakeFiles/_run.dir/Folder.cpp.obj: src/CMakeFiles/_run.dir/flags.make
 src/CMakeFiles/_run.dir/Folder.cpp.obj: C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/src/Folder.cpp
 src/CMakeFiles/_run.dir/Folder.cpp.obj: src/CMakeFiles/_run.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/_run.dir/Folder.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/_run.dir/Folder.cpp.obj"
 	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\src && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/_run.dir/Folder.cpp.obj -MF CMakeFiles\_run.dir\Folder.cpp.obj.d -o CMakeFiles\_run.dir\Folder.cpp.obj -c C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\src\Folder.cpp
 
 src/CMakeFiles/_run.dir/Folder.cpp.i: cmake_force
@@ -99,7 +113,7 @@ src/CMakeFiles/_run.dir/Folder.cpp.s: cmake_force
 src/CMakeFiles/_run.dir/Note.cpp.obj: src/CMakeFiles/_run.dir/flags.make
 src/CMakeFiles/_run.dir/Note.cpp.obj: C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/src/Note.cpp
 src/CMakeFiles/_run.dir/Note.cpp.obj: src/CMakeFiles/_run.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/_run.dir/Note.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/_run.dir/Note.cpp.obj"
 	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\src && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/_run.dir/Note.cpp.obj -MF CMakeFiles\_run.dir\Note.cpp.obj.d -o CMakeFiles\_run.dir\Note.cpp.obj -c C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\src\Note.cpp
 
 src/CMakeFiles/_run.dir/Note.cpp.i: cmake_force
@@ -110,55 +124,25 @@ src/CMakeFiles/_run.dir/Note.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_run.dir/Note.cpp.s"
 	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\src && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\src\Note.cpp -o CMakeFiles\_run.dir\Note.cpp.s
 
-src/CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj: src/CMakeFiles/_run.dir/flags.make
-src/CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj: C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/src/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp
-src/CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj: src/CMakeFiles/_run.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj"
-	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\src && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj -MF CMakeFiles\_run.dir\cmake-build-debug\CMakeFiles\3.26.4\CompilerIdCXX\CMakeCXXCompilerId.cpp.obj.d -o CMakeFiles\_run.dir\cmake-build-debug\CMakeFiles\3.26.4\CompilerIdCXX\CMakeCXXCompilerId.cpp.obj -c C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\src\cmake-build-debug\CMakeFiles\3.26.4\CompilerIdCXX\CMakeCXXCompilerId.cpp
-
-src/CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.i"
-	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\src && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\src\cmake-build-debug\CMakeFiles\3.26.4\CompilerIdCXX\CMakeCXXCompilerId.cpp > CMakeFiles\_run.dir\cmake-build-debug\CMakeFiles\3.26.4\CompilerIdCXX\CMakeCXXCompilerId.cpp.i
-
-src/CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.s"
-	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\src && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\src\cmake-build-debug\CMakeFiles\3.26.4\CompilerIdCXX\CMakeCXXCompilerId.cpp -o CMakeFiles\_run.dir\cmake-build-debug\CMakeFiles\3.26.4\CompilerIdCXX\CMakeCXXCompilerId.cpp.s
-
-src/CMakeFiles/_run.dir/main.cpp.obj: src/CMakeFiles/_run.dir/flags.make
-src/CMakeFiles/_run.dir/main.cpp.obj: C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/src/main.cpp
-src/CMakeFiles/_run.dir/main.cpp.obj: src/CMakeFiles/_run.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/_run.dir/main.cpp.obj"
-	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\src && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/_run.dir/main.cpp.obj -MF CMakeFiles\_run.dir\main.cpp.obj.d -o CMakeFiles\_run.dir\main.cpp.obj -c C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\src\main.cpp
-
-src/CMakeFiles/_run.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_run.dir/main.cpp.i"
-	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\src && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\src\main.cpp > CMakeFiles\_run.dir\main.cpp.i
-
-src/CMakeFiles/_run.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_run.dir/main.cpp.s"
-	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\src && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\src\main.cpp -o CMakeFiles\_run.dir\main.cpp.s
-
 # Object files for target _run
 _run_OBJECTS = \
+"CMakeFiles/_run.dir/main.cpp.obj" \
 "CMakeFiles/_run.dir/ConcreteObserver.cpp.obj" \
 "CMakeFiles/_run.dir/Folder.cpp.obj" \
-"CMakeFiles/_run.dir/Note.cpp.obj" \
-"CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj" \
-"CMakeFiles/_run.dir/main.cpp.obj"
+"CMakeFiles/_run.dir/Note.cpp.obj"
 
 # External object files for target _run
 _run_EXTERNAL_OBJECTS =
 
+src/_run.exe: src/CMakeFiles/_run.dir/main.cpp.obj
 src/_run.exe: src/CMakeFiles/_run.dir/ConcreteObserver.cpp.obj
 src/_run.exe: src/CMakeFiles/_run.dir/Folder.cpp.obj
 src/_run.exe: src/CMakeFiles/_run.dir/Note.cpp.obj
-src/_run.exe: src/CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj
-src/_run.exe: src/CMakeFiles/_run.dir/main.cpp.obj
 src/_run.exe: src/CMakeFiles/_run.dir/build.make
 src/_run.exe: src/CMakeFiles/_run.dir/linkLibs.rsp
 src/_run.exe: src/CMakeFiles/_run.dir/objects1.rsp
 src/_run.exe: src/CMakeFiles/_run.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable _run.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable _run.exe"
 	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug\src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\_run.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

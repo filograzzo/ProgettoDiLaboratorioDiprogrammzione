@@ -5,8 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/_run.dir/Folder.cpp.obj.d"
   "CMakeFiles/_run.dir/Note.cpp.obj"
   "CMakeFiles/_run.dir/Note.cpp.obj.d"
-  "CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj"
-  "CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj.d"
   "CMakeFiles/_run.dir/main.cpp.obj"
   "CMakeFiles/_run.dir/main.cpp.obj.d"
   "_run.exe"

@@ -27,7 +27,7 @@ public:
     bool isBlocked() const;
     void setBlocked(bool blocked);
     bool isFavourite() const;
-    void setFavourite(bool favourite);
+    bool setFavourite(bool favourite);
     bool operator==(const Note& other) const;
 };
 

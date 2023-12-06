@@ -269,40 +269,12 @@ Note.cpp.s:
 	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\_lib.dir\build.make src/CMakeFiles/_lib.dir/Note.cpp.s
 .PHONY : Note.cpp.s
 
-cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.obj: cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj
-.PHONY : cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.obj
-
-# target to build an object file
-cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj:
-	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\_run.dir\build.make src/CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj
-	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\_lib.dir\build.make src/CMakeFiles/_lib.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj
-.PHONY : cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj
-
-cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.i: cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.i
-.PHONY : cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.i
-
-# target to preprocess a source file
-cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.i:
-	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\_run.dir\build.make src/CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.i
-	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\_lib.dir\build.make src/CMakeFiles/_lib.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.i
-.PHONY : cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.i
-
-cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.s: cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
-.PHONY : cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.s
-
-# target to generate assembly for a file
-cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.s:
-	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\_run.dir\build.make src/CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
-	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\_lib.dir\build.make src/CMakeFiles/_lib.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
-.PHONY : cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
-
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
 # target to build an object file
 main.cpp.obj:
 	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\_run.dir\build.make src/CMakeFiles/_run.dir/main.cpp.obj
-	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\_lib.dir\build.make src/CMakeFiles/_lib.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -311,7 +283,6 @@ main.i: main.cpp.i
 # target to preprocess a source file
 main.cpp.i:
 	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\_run.dir\build.make src/CMakeFiles/_run.dir/main.cpp.i
-	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\_lib.dir\build.make src/CMakeFiles/_lib.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -320,7 +291,6 @@ main.s: main.cpp.s
 # target to generate assembly for a file
 main.cpp.s:
 	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\_run.dir\build.make src/CMakeFiles/_run.dir/main.cpp.s
-	cd /d C:\Users\Filippo\CLionProjects\ProgettoDiLaboratorioDiprogrammzione-master\cmake-build-debug && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\_lib.dir\build.make src/CMakeFiles/_lib.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -346,9 +316,6 @@ help:
 	@echo ... Note.obj
 	@echo ... Note.i
 	@echo ... Note.s
-	@echo ... cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.obj
-	@echo ... cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.i
-	@echo ... cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -11,7 +11,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/src/ConcreteObserver.cpp" "src/CMakeFiles/_run.dir/ConcreteObserver.cpp.obj" "gcc" "src/CMakeFiles/_run.dir/ConcreteObserver.cpp.obj.d"
   "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/src/Folder.cpp" "src/CMakeFiles/_run.dir/Folder.cpp.obj" "gcc" "src/CMakeFiles/_run.dir/Folder.cpp.obj.d"
   "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/src/Note.cpp" "src/CMakeFiles/_run.dir/Note.cpp.obj" "gcc" "src/CMakeFiles/_run.dir/Note.cpp.obj.d"
-  "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/src/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp" "src/CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj" "gcc" "src/CMakeFiles/_run.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj.d"
   "C:/Users/Filippo/CLionProjects/ProgettoDiLaboratorioDiprogrammzione-master/src/main.cpp" "src/CMakeFiles/_run.dir/main.cpp.obj" "gcc" "src/CMakeFiles/_run.dir/main.cpp.obj.d"
   )
 

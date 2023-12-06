@@ -5,10 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/_lib.dir/Folder.cpp.obj.d"
   "CMakeFiles/_lib.dir/Note.cpp.obj"
   "CMakeFiles/_lib.dir/Note.cpp.obj.d"
-  "CMakeFiles/_lib.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj"
-  "CMakeFiles/_lib.dir/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj.d"
-  "CMakeFiles/_lib.dir/main.cpp.obj"
-  "CMakeFiles/_lib.dir/main.cpp.obj.d"
   "lib_lib.a"
   "lib_lib.pdb"
 )
