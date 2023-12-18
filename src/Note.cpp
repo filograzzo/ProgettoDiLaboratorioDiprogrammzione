@@ -40,9 +40,14 @@ bool Note::isFavourite() const {
     return favourite;
 }
 
-void Note::setFavourite(bool favourite) {
-    this->favourite = favourite;
+bool Note::setFavourite(bool favourite) {
+    if (!this->blocked){
+        this->favourite = favourite;
+        return true;
+    }
+    return false;
 }
+
 
 bool Note::operator==(const Note &other) const {
     if ( this->title == other.title && this->text == other.text )

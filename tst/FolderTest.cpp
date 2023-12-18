@@ -31,7 +31,7 @@ TEST_F (FolderFixture, getNoteWithTitleFolderTest ){ //ho già testato add e rem
 
 // ADDNOTE E REMOVENOTE
 
-TEST_F (FolderFixture, addNoteFolderTest ){
+TEST_F (FolderFixture, addNoteFolderTest ){//TODO: controlla il contatore quando aggiungo una nota
 
     folder->addNote(nota );
     Note newNote = Note("", "");
@@ -91,11 +91,11 @@ TEST_F (FolderFixture, makeAndRemoveFavouriteFolderTest){
 
 TEST_F(FolderFixture, blockedFolderTest){
     folder->addNote(nota);
-    folder->blockNote(nota);
+    nota.setBlocked(true);
     ASSERT_FALSE(folder->makeFavourite(nota));
     ASSERT_EQ(folder->getFavouriteSize(), 0);
 
-    folder->unlockNote(nota);
+    nota.setBlocked(false);
     folder->makeFavourite(nota);
     ASSERT_EQ(folder->getFavouriteSize(), 1);
     nota.setBlocked(true);
@@ -103,3 +103,5 @@ TEST_F(FolderFixture, blockedFolderTest){
     ASSERT_EQ(folder->getFavouriteSize(), 1);
 
 }
+
+//TODO: test per getblockedsize()

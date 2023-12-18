@@ -20,6 +20,7 @@ protected:
     std::string name; //nome del folder
     std::list<Note> notesList; //lista di lunghezza variabile
     static std::list<Note> favouriteNotes; //lista di note preferite
+    static std::list<Note> blockedNotes; //lista di note bloccate
 
 public:
     explicit Folder(const std::string &name) : name(name) {};
@@ -39,15 +40,24 @@ public:
 
     void unlockNote(const Note &note);
 
-    bool makeFavourite(Note &note);
+    static bool makeFavourite(Note &note);
 
     static bool removeFavourite(const Note &note);
+
+    static std::list<std::string> listBlocked();
 
     static std::list<std::string> listFavourites();
 
     static int getFavouriteSize();
 
+    static int getBlockedSize();
+
     bool getNoteFromTitle(const std::string &title, Note &nota) const;
+
+    //TODO: deve essere possibile modificare la nota dal folder
+    bool changeTitle(const Note &note, std::string newTitle);
+
+    bool changeText(const Note &note, std::string newText);
 
     //da subject
     void addObserver(Observer *o) override;
