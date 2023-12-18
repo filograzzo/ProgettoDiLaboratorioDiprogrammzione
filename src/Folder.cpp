@@ -10,6 +10,7 @@ const std::string &Folder::getName() const {
 
 void Folder::setName(const std::string &name) {
     Folder::name = name;
+    notifyObservers();
 }
 
 bool Folder::addNote(const Note &note) {
@@ -24,6 +25,8 @@ bool Folder::addNote(const Note &note) {
 
     if (note.isFavourite())
         favouriteNotes.push_back(note);
+
+    notifyObservers();
 
     return true;
 }
@@ -43,6 +46,8 @@ bool Folder::removeNote(const Note &note) { //si può cancellare la nota solo su
     }
 
     notesList.remove(note); //rimuove la nota
+
+    notifyObservers();
 
     return true; //ritorna successo
 }
@@ -68,7 +73,6 @@ void Folder::unlockNote(const Note &note) {
     auto it = std::find(notesList.begin(), notesList.end(), note);
     (*it).setBlocked(false);
     blockedNotes.remove(note);
-
 }
 
 bool Folder::makeFavourite(Note &note) {
@@ -133,6 +137,7 @@ bool Folder::changeTitle(const Note &note, std::string newTitle) {
         auto it = std::find(notesList.begin(), notesList.end(), note);
         if (it != notesList.end()){
             return (*it).setTitle(newTitle);
+            notifyObservers();
         }
     return false; //può ritornare false in due casi: la nota è bloccata (lo ritornerà setTitle) o se non trova la nota nella lista
 }
@@ -141,6 +146,7 @@ bool Folder::changeText(const Note &note, std::string newText) {
     auto it = std::find(notesList.begin(), notesList.end(), note);
     if (it != notesList.end()){
         return (*it).setText(newText);
+        notifyObservers();
     }
     return false; //può ritornare false in due casi: la nota è bloccata (lo ritornerà setText) o se non trova la nota nella lista
 }
@@ -169,7 +175,7 @@ void Folder::removeObserver(Observer *o) {
     }
 }
 
-void Folder::notifyObservers() {//TODO: usare notifyObserver in add e remove
+void Folder::notifyObservers() {
 
     if (observerList.empty())
         return;

@@ -54,7 +54,6 @@ public:
 
     bool getNoteFromTitle(const std::string &title, Note &nota) const;
 
-    //TODO: deve essere possibile modificare la nota dal folder
     bool changeTitle(const Note &note, std::string newTitle);
 
     bool changeText(const Note &note, std::string newText);

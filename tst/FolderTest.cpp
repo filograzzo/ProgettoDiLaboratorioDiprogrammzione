@@ -104,4 +104,4 @@ TEST_F(FolderFixture, blockedFolderTest){
 
 }
 
-//TODO: test per getblockedsize()
+//TODO: test per getblockedsize(), changeTitle, changeText
