@@ -50,7 +50,7 @@ bool Note::setFavourite(bool favourite) {
 
 
 bool Note::operator==(const Note &other) const {
-    if ( this->title == other.title && this->text == other.text )
+    if ( this->title == other.title && this->text == other.text && this->blocked==other.blocked && this->favourite==other.favourite)
         return true;
     return false;
 }

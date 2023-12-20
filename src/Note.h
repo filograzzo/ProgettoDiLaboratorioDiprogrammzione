@@ -11,12 +11,12 @@ class Note {
 protected:  //attributi protetti, condivisi solo con le classi derivate
     std::string title; //titolo della nota
     std::string text;  //testo all'interno della nota
-    bool blocked = false; //la nota può essere modificata o meno
-    bool favourite = false; //la nota può essere segnata come favourite e in caso viene messa anche in un folder
+    bool blocked ; //la nota può essere modificata o meno
+    bool favourite ; //la nota può essere segnata come favourite e in caso viene messa anche in un folder
     // speciale "favouriteList"
 
 public:
-    Note ( const std::string& ti, const std::string& te): title(ti), text(te){};  //costruttore, passo il titolo e il
+    Note ( const std::string& ti, const std::string& te, bool block=false, bool fav=false): title(ti), text(te), blocked(block), favourite(fav){};  //costruttore, passo il titolo e il
                                                                            // testo. La nota non è bloccata di default.
     const std::string &getTitle() const; //Primo const: il valore ritornato è costante. Secondo const: non modifica lo
                                          // stato dell'oggetto su cui viene chiamata

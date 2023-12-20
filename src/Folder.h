@@ -32,7 +32,7 @@ public:
 
     bool addNote(const Note &note);
 
-    bool removeNote(const Note &note);
+    bool removeNote(const std::string title);
 
     int getSize() const;
 
@@ -42,7 +42,11 @@ public:
 
     static bool makeFavourite(Note &note);
 
-    static bool removeFavourite(const Note &note);
+    static bool removeFavourite(const std::string title);
+
+    static void clearBlockedNotes();
+
+    static void clearFavouriteNotes();
 
     static std::list<std::string> listBlocked();
 

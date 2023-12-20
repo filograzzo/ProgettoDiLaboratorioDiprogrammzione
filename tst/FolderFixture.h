@@ -11,7 +11,7 @@ class FolderFixture : public ::testing::Test {
 protected:
     Folder* folder;
     std::string NoteTitol = "Esempio";
-    std::string ExampleText = "Testo sempio";
+    std::string ExampleText = "Testo esempio";
     Note nota =  Note ( NoteTitol, ExampleText );
 
 public:
