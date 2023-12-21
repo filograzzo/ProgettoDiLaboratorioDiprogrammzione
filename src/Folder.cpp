@@ -34,7 +34,7 @@ bool Folder::addNote(const Note &note) {
     return true;
 }
 
-bool Folder::removeNote(const std::string title) {
+bool Folder::removeNote(const std::string &title) {
 
     for (auto it : notesList) {
         if (it.getTitle() == title) {
@@ -89,7 +89,7 @@ bool Folder::makeFavourite(Note &note) {
 
 }
 
-bool Folder::removeFavourite(const std::string title) {
+bool Folder::removeFavourite(const std::string &title) {
 
 
     auto it = std::find_if(favouriteNotes.begin(), favouriteNotes.end(), [&](const Note& n){ return n.getTitle()==title; });
@@ -162,7 +162,7 @@ bool Folder::getNoteFromTitle(const std::string &title, Note &nota) const {
     return false;
 }
 
-bool Folder::changeTitle(const Note &note, std::string newTitle) {
+bool Folder::changeTitle( Note &note, const std::string &newTitle) {
         auto it = std::find(notesList.begin(), notesList.end(), note);
         if (it != notesList.end()){
             bool done = (*it).setTitle(newTitle);
@@ -172,7 +172,7 @@ bool Folder::changeTitle(const Note &note, std::string newTitle) {
     return false; //può ritornare false in due casi: la nota è bloccata (lo ritornerà setTitle) o se non trova la nota nella lista
 }
 
-bool Folder::changeText(const Note &note, std::string newText) {
+bool Folder::changeText( Note &note, const std::string &newText) {
     auto it = std::find(notesList.begin(), notesList.end(), note);
     if (it != notesList.end()){
         bool done = (*it).setText(newText);

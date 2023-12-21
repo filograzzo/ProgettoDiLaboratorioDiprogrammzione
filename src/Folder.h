@@ -32,7 +32,7 @@ public:
 
     bool addNote(const Note &note);
 
-    bool removeNote(const std::string title);
+    bool removeNote(const std::string &title);
 
     int getSize() const;
 
@@ -42,7 +42,7 @@ public:
 
     static bool makeFavourite(Note &note);
 
-    static bool removeFavourite(const std::string title);
+    static bool removeFavourite(const std::string &title);
 
     static void clearBlockedNotes();
 
@@ -58,9 +58,9 @@ public:
 
     bool getNoteFromTitle(const std::string &title, Note &nota) const;
 
-    bool changeTitle(const Note &note, std::string newTitle);
+    bool changeTitle(Note &note, const std::string &newTitle);
 
-    bool changeText(const Note &note, std::string newText);
+    bool changeText(Note &note, const std::string &newText);
 
     //da subject
     void addObserver(Observer *o) override;
