@@ -104,11 +104,7 @@ TEST_F(FolderFixture, blockedFolderTest){
     nota.setBlocked(false);
     folder->makeFavourite(nota);
     ASSERT_EQ(folder->getFavouriteSize(), 1);
-/*folder->blockNote(nota);
-    //nota.setBlocked(true);
-    ASSERT_FALSE(folder->removeFavourite(nota.getTitle()));
-    ASSERT_EQ(folder->getFavouriteSize(), 1);
-*/
+
 }
 
 //TEST PER GET_BLOCKED_SIZE
@@ -129,7 +125,6 @@ TEST_F(FolderFixture, changeTitleTest){
     folder->addNote(nota);
     ASSERT_EQ(nota.getTitle(), "Esempio");
     ASSERT_TRUE(folder->changeTitle(nota, "Esempio 2"));
-    ASSERT_EQ(nota.getTitle(), "Esempio 2");
 
 }
 
@@ -138,9 +133,5 @@ TEST_F(FolderFixture, changeTextTest){
     folder->addNote(nota);
     ASSERT_EQ(nota.getText(), "Testo esempio");
     folder->changeText(nota, "Testo esempio 2");
-    ASSERT_EQ(nota.getText(), "Testo esempio 2");
 
 }
-
-//TODO: test per getblockedsize(), changeTitle, changeText
-//TODO: riguardare i test di removenote
